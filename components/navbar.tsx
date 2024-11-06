@@ -90,7 +90,7 @@ export function Navbar() {
                         ))
                     }
                 </ul>
-                <MenuIcon className="h-8 fill-foreground w-8 cursor-pointer" onClick={handleToggle} />
+                <MenuIcon className="md:hidden h-8 fill-foreground w-8 cursor-pointer" onClick={handleToggle} />
             </Wrapper>
         </header>
     )
