@@ -49,7 +49,7 @@ export function WhateWeOffer() {
             </div>
             </div>
 
-            <Wrapper className="max-w-screen-xl grid grid-cols-3 items-center gap-10">
+            <Wrapper className="max-w-screen-xl grid md:grid-cols-3 items-center gap-10">
                 <div className="space-y-7">
                     <WhatWeOfferCard className="rounded-full rounded-r-none" icon={<BuildingIcon className="fill-primary/80 group-hover:fill-white h-7 w-7 duration-500"/>} headerText={"Heavy Industries"} description={"All kinds of industries"}/>
                     <WhatWeOfferCard className="rounded-full rounded-r-none" icon={<TrainIcon className="fill-primary/80 group-hover:fill-white h-7 w-7 duration-500"/>} headerText={"Transportation"} description={"All kinds of industries"}/>

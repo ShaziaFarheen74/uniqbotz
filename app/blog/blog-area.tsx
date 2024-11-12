@@ -6,8 +6,8 @@ import {Input} from "@/components/ui/input";
 export function BlogArea() {
     return (
         <div className="py-20">
-            <Wrapper className="grid grid-cols-[1fr_255px] gap-10 max-w-6xl">
-                <div className="grid grid-cols-2 gap-10">
+            <Wrapper className="grid md:grid-cols-[1fr_255px] gap-10 max-w-6xl">
+                <div className="grid md:grid-cols-2 gap-10">
                     <BlogCard />
                     <BlogCard />
                     <BlogCard />

@@ -113,7 +113,7 @@ export function Navbar() {
 
     return (
         <header className={cn("fixed inset-x-0 w-full top-0 z-30 border-b border-b-muted/10 transition-all duration-500 bg-white text-foreground")}>
-            <Wrapper className="h-20 flex items-center justify-between">
+            <Wrapper className="h-16 md:h-20 flex items-center justify-between">
                 <Logo/>
                 <ul className="hidden md:flex items-center space-x-4 lg:space-x-5">
                     {

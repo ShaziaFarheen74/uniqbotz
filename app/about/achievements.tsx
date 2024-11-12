@@ -67,7 +67,7 @@ export function Achievements() {
 function StatCard({endValue, description, suffix}: { endValue: number; description: string; suffix: string }) {
     return (<>
             <Counter target={endValue} suffix={suffix}
-                     className="text-5xl bg-gradient-to-r from-[#4E03A1] via-[#9B2EE0] via-75% to-[#9B2EE0] bg-clip-text text-transparent"/>
+                     className="text-4xl md:text-5xl bg-gradient-to-r from-[#4E03A1] via-[#9B2EE0] via-75% to-[#9B2EE0] bg-clip-text text-transparent"/>
             <p className="text-foreground font-medium text-lg">{description}</p>
         </>
     )
