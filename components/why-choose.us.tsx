@@ -2,13 +2,13 @@ import Wrapper from "@/components/wrapper";
 
 export function WhyChooseUs() {
     return (
-        <div className="pb-32 space-y-14">
+        <div id="why-choose-us" className="py-20 space-y-14">
             <div className="text-center">
                 <span className="text-primary text-sm">Why choose us?</span>
             </div>
             <Wrapper className="space-y-10">
                 <div className="text-center space-y-4 max-w-3xl mx-auto">
-                    <h2 className="text-4xl font-semibold">Our Platform takes away the hard Process of creating your website</h2>
+                    <h2 className="text-4xl">Our Platform takes away the hard Process of creating your website</h2>
                     <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et</p>
                 </div>
                 <div className="grid md:grid-cols-2 gap-14">

@@ -54,7 +54,7 @@ export default function VideoModal({ videoUrl, className }: {videoUrl: string; c
           {isOpen && (
               <>
               <Overlay isOpen={isOpen} handleOpen={closeModal} />
-              <Wrapper className="fixed flex items-center justify-center z-50" tabIndex={0}>
+              <Wrapper className="fixed top-1/2 -translate-y-1/2 flex items-center justify-center z-50" tabIndex={0}>
                   <div className="bg-black p-4 rounded-lg relative max-w-2xl w-full grid place-content-center">
                       {/* Close button */}
                       <button onClick={closeModal} className="absolute top-2 right-2 text-white">

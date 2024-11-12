@@ -34,7 +34,7 @@ export function Services() {
 
 function ServiceCard({headerText, description, imageSrc}: { headerText: string; description: string, imageSrc: string }) {
     return (
-        <div className="text-center flex flex-col items-center px-8 py-10 gap-y-5 rounded-lg shadow-lg max-w-[22rem]">
+        <div className="text-center flex flex-col items-center px-8 py-10 gap-y-5 rounded-lg shadow-all max-w-[22rem]">
             <div>
                 <Image src={imageSrc} alt={headerText} width={202} height={196}/>
             </div>

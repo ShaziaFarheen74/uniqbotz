@@ -11,11 +11,12 @@ export function Hero() {
 
     return (
         <div
+            id={"hero"}
             className="flex items-center bg-heroBg bg-no-repeat bg-cover isolate relative bg-[bottom_center] bg-clip-padding bg-origin-padding min-h-[700px] py-20 md:py-72">
             <Wrapper className="relative flex flex-wrap max-md:flex-col max-md:gap-10 items-center justify-between max-md:pt-16 max-md:text-center">
                 <VideoModal videoUrl="https://www.youtube.com/embed/9ftKYuV0Cao" className="md:hidden" />
                 <div className="space-y-5 md:w-1/2">
-                    <Typewriter mainText={"OpenUp AI content Make You "} words={words} className="text-4xl lg:text-6xl font-semibold text-white"
+                    <Typewriter mainText={"UniqBotz Infotech Make You "} words={words} className="text-4xl lg:text-5xl font-semibold text-white"
                                 wordClassName="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent border-r-4 border-secondary pr-2"/>
                     <p className="md:text-lg max-w-lg text-white/80 md:leading-8">Transform your business with tailored artificial intelligence that
                         enhances efficiency, drives growth, and unlocks new opportunities for success.</p>

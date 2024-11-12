@@ -35,9 +35,10 @@ export default function Typewriter({mainText, words, className, wordClassName}: 
   }, [currentWord, isDeleting, speed, wordIndex, words]);
 
   return (
-    <div className={className}>
+    <h1 className={className}>
       <span>{mainText}</span>
+      <br className="md:hidden"/>
       <span className={wordClassName}>{currentWord}</span>
-    </div>
+    </h1>
   );
 }

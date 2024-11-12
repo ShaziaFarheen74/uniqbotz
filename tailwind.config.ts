@@ -9,13 +9,19 @@ export default {
         "./app/**/*.{js,ts,jsx,tsx,mdx}",
     ],
     theme: {
-		container: {
-            center: true,
-            padding: "1rem",
+        container: {
+            center: 'true',
+            padding: '1rem'
         },
         extend: {
+            boxShadow: {
+                'all': '0 0 20px 3px rgba(0, 0, 0, .05)'
+            },
+            fontFamily: {
+                'century': ["var(--font-century)"]
+            },
             backgroundImage: {
-                heroBg: `url("/header4.png")`,
+                heroBg: 'url("/header4.png")',
             },
             colors: {
                 background: 'hsl(var(--background))',
@@ -63,6 +69,29 @@ export default {
                 lg: 'var(--radius)',
                 md: 'calc(var(--radius) - 2px)',
                 sm: 'calc(var(--radius) - 4px)'
+            },
+            animation: {
+                'spin-slow': 'spin 10s linear infinite',
+                'accordion-down': 'accordion-down 0.2s ease-out',
+                'accordion-up': 'accordion-up 0.2s ease-out'
+            },
+            keyframes: {
+                'accordion-down': {
+                    from: {
+                        height: '0'
+                    },
+                    to: {
+                        height: 'var(--radix-accordion-content-height)'
+                    }
+                },
+                'accordion-up': {
+                    from: {
+                        height: 'var(--radix-accordion-content-height)'
+                    },
+                    to: {
+                        height: '0'
+                    }
+                }
             }
         }
     },
