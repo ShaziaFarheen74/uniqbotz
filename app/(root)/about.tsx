@@ -1,10 +1,17 @@
+'use client'
+
 import Wrapper from "@/components/wrapper";
 import Image from "next/image";
 import {Button} from "@/components/ui/button";
-import Link from "next/link";
 import FadeInWrapper from "@/components/fade-in-wrapper";
+import {useState} from "react";
 
 export function About() {
+    const [readMore, setReadMore] = useState<boolean>(false)
+
+    const handleToggleReadMore = () => {
+        setReadMore(!readMore)
+    }
     return (<div className="pb-32">
             <Wrapper className="flex flex-wrap max-md:flex-col items-center justify-center gap-8 relative">
 
@@ -16,16 +23,25 @@ export function About() {
                         <h2 className="text-3xl md:text-4xl font-semibold">A Straight forward structure for powerful automation results</h2>
                     </FadeInWrapper>
                     <FadeInWrapper>
-                        <p className='text-foreground/80 md:text-lg md:leading-7'>Stigma at the moon was the definition of rumour, dissolved to a
-                            solid sensor. Countless starships infiltrate galactic, strange crews. Scrape raspberries fairly, then mix with tabasco and
-                            serve freshly in bucket. Where is the virtual planet?</p>
+                        <p className='text-foreground/80 md:leading-7'>UniqBotz Infotech delivers impactful automation solutions. We analyze your processes, design custom RPA bots, and ensure seamless integration. Our solutions are actively monitored, scalable, and built with data security and compliance in mind. We drive productivity and support your long-term growth.</p>
+                        <br/>
+                        {
+                            readMore &&
+                            <p className='text-foreground/80 md:leading-7'>For powerful automation results, UniqBotz Infotech follows a streamlined approach: first, we identify key repetitive
+                                processes that deliver maximum impact when automated. We then customize RPA solutions to fit seamlessly into existing
+                                workflows, ensuring minimal disruption. Our solutions incorporate intelligent monitoring to track performance and
+                                identify improvement areas, all while emphasizing scalability to grow with your business. We prioritize security and
+                                compliance, especially for sensitive industries, delivering robust, efficient automation tailored for sustainable
+                                growth.</p>
+                        }
+
                     </FadeInWrapper>
                     <FadeInWrapper>
-                        <Button asChild>
-                            <Link href={"/about"}>Read More</Link>
+                        <Button onClick={handleToggleReadMore}>
+                            Read More
                         </Button>
                     </FadeInWrapper>
                 </div>
             </Wrapper>
-        </div>)
+    </div>)
 }

@@ -7,26 +7,20 @@ export function Services() {
         <div className="pb-40">
             <Wrapper className="space-y-12">
                 <FadeSlideWrapper className="text-center max-w-screen-md mx-auto space-y-4">
-                    <h2 className="text-3xl md:text-4xl font-semibold">We offer a wide range of services and provide complete client satisfication</h2>
+                    <h2 className="text-3xl md:text-4xl font-semibold">We deliver a comprehensive suite of RPA solutions, ensuring seamless automation and complete client satisfaction.</h2>
                     <p>Collision course, starlight travel, and alarm.Per guest prepare one jar of emeril&apos;s essence with drained pumpkin seeds for
                         dessert.</p>
                 </FadeSlideWrapper>
                 <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-12 justify-items-center">
-                    <ServiceCard imageSrc={`/s1.png`} headerText={"RPA"} description={"Lorem ipsum" +
-                        " dolor sit amet, consetetur adipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam" +
-                        " erat, sed diam voluptua."}/>
-                    <ServiceCard imageSrc={`/s2.png`} headerText={"Process automation"} description={"Lorem ipsum" +
-                        " dolor sit amet, consetetur adipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam" +
-                        " erat, sed diam voluptua."}/>
-                    <ServiceCard imageSrc={`/s3.png`} headerText={"Script based automation"} description={"Lorem ipsum" +
-                        " dolor sit amet, consetetur adipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam" +
-                        " erat, sed diam voluptua."}/>
-                    <ServiceCard imageSrc={`/s4.png`} headerText={"Industry wise"} description={"Lorem ipsum" +
-                        " dolor sit amet, consetetur adipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam" +
-                        " erat, sed diam voluptua."}/>
-                    <ServiceCard imageSrc={`/s5.png`} headerText={"Use cases"} description={"Lorem ipsum" +
-                        " dolor sit amet, consetetur adipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam" +
-                        " erat, sed diam voluptua."}/>
+                    <ServiceCard imageSrc={`/s1.png`} headerText={"RPA"} description={"Robotic Process Automation (RPA) automates repetitive tasks, allowing software bots to handle routine workflows. This boosts efficiency, reduces errors, and frees up employees for more complex work."}/>
+
+                    <ServiceCard imageSrc={`/s2.png`} headerText={"Process automation"} description={"Process Automation streamlines repetitive tasks using technology to boost efficiency, reduce errors, and free up resources for higher-value work."}/>
+
+                    <ServiceCard imageSrc={`/s3.png`} headerText={"Script based automation"} description={"Script-Based Automation uses code to automate specific tasks, making processes faster, more accurate, and freeing up time for complex activities."}/>
+
+                    <ServiceCard imageSrc={`/s4.png`} headerText={"Industry wise"} description={"Industry-wise, RPA automates sector-specific processes, increasing accuracy, efficiency, and freeing up resources across fields like finance, healthcare, and logistics."}/>
+
+                    <ServiceCard imageSrc={`/s5.png`} headerText={"Use cases"} description={"RPA use cases span various functions like data entry, invoice processing, and customer service, automating repetitive tasks to enhance speed and accuracy across industries."}/>
                 </div>
             </Wrapper>
         </div>

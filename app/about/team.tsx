@@ -14,19 +14,19 @@ export function Team() {
             <SectionHeader text={"Team"} />
                 <FadeSlideWrapper>
 
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias eos ea obcaecati et similique incidunt animi, sed, quos officiis placeat. Id ipsa molestias.</p>
+            <p>Our team of seasoned experts brings a wealth of knowledge and experience to every project. We&apos;re passionate about leveraging RPA to streamline your operations and boost productivity.</p>
                 </FadeSlideWrapper>
             </div>
-            <Wrapper className="grid md:grid-cols-3 gap-10">
+            <Wrapper className="grid md:grid-cols-2 justify-items-center gap-10">
                 <FadeSlideWrapper className="flex flex-col gap-y-7 p-10 text-center shadow-all">
                     <div className="relative flex justify-center items-center h-fit p-4">
-                        <Image src="/team5.png" alt={"team 5"} width={140} height={140} className="rounded-full"/>
+                        <Image src="/website-images/images/team1.png" alt={"Sugumar B"} width={140} height={140} className="rounded-full"/>
                         <Image src="/team-shape.png" alt={"team shape"} width={208} height={198} className="absolute h-full w-fit animate-spin-slow"/>
                     </div>
                     <div className="space-y-6">
                         <div>
-                            <h2>Karen Peter</h2>
-                            <p>CEO & Founder</p>
+                            <h2>SUGUMAR B</h2>
+                            <p>CPO,UNIQBOTZ INFOTECH INDIA</p>
                         </div>
                         <div className="flex items-center gap-x-4 justify-center">
                             <span className="bg-primary/10 shadow p-2.5 rounded-lg">
@@ -43,37 +43,13 @@ export function Team() {
                 </FadeSlideWrapper>
                 <FadeSlideWrapper className="flex flex-col gap-y-7 p-10 text-center shadow-all">
                     <div className="relative flex justify-center items-center h-fit p-4">
-                        <Image src="/team6.png" alt={"team 5"} width={140} height={140} className="rounded-full"/>
+                        <Image src="/website-images/images/team2.png" alt={"Vinod Srinivasan"} width={140} height={140} className="rounded-full"/>
                         <Image src="/team-shape.png" alt={"team shape"} width={208} height={198} className="absolute h-full w-fit animate-spin-slow"/>
                     </div>
                     <div className="space-y-6">
                         <div>
-                            <h2>Alex Peter</h2>
-                            <p>Executive</p>
-                        </div>
-
-                        <div className="flex items-center gap-x-4 justify-center">
-                            <span className="bg-primary/10 shadow p-2.5 rounded-lg">
-                                <FacebookIcon className="fill-primary"/>
-                            </span>
-                            <span className="bg-primary/10 shadow p-2.5 rounded-lg">
-                                <LinkedInIcon className="fill-primary"/>
-                            </span>
-                            <span className="bg-primary/10 shadow p-2.5 rounded-lg">
-                                <InstagramIcon className="fill-primary"/>
-                            </span>
-                        </div>
-                    </div>
-                </FadeSlideWrapper>
-                <FadeSlideWrapper className="flex flex-col gap-y-7 p-10 text-center shadow-all">
-                    <div className="relative flex justify-center items-center h-fit p-4">
-                        <Image src="/team7.png" alt={"team 5"} width={140} height={140} className="rounded-full"/>
-                        <Image src="/team-shape.png" alt={"team shape"} width={208} height={198} className="absolute h-full w-fit animate-spin-slow"/>
-                    </div>
-                    <div className="space-y-6">
-                        <div>
-                            <h2>Alicia Maria</h2>
-                            <p>Web Developer</p>
+                            <h2>VINOD SRINIVASAN K</h2>
+                            <p>BDP, UNIQBOTZ INFOTECH CANADA</p>
                         </div>
 
                         <div className="flex items-center gap-x-4 justify-center">

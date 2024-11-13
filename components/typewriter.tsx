@@ -1,6 +1,7 @@
 'use client'
 
 import { useEffect, useState } from 'react';
+import {cn} from "@/lib/utils";
 
 export default function Typewriter({mainText, words, className, wordClassName}: {mainText?: string; words: string[], className?: string; wordClassName?: string}) {
   const [currentWord, setCurrentWord] = useState('');
@@ -35,10 +36,10 @@ export default function Typewriter({mainText, words, className, wordClassName}: 
   }, [currentWord, isDeleting, speed, wordIndex, words]);
 
   return (
-    <h1 className={className}>
+    <h1 className={cn("min-h", className)}>
       <span>{mainText}</span>
-      <br className="md:hidden"/>
-      <span className={wordClassName}>{currentWord}</span>
+      <br className=""/>
+      <span className={cn("inline-block min-h-20", wordClassName)}>{currentWord}</span>
     </h1>
   );
 }

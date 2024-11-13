@@ -7,7 +7,7 @@ import Link from "next/link";
 
 export function Hero() {
     const words = [
-        "Content", "Blog Content", "Sales Copy", "Media Content"
+        "Efficient – Process Automation Simplified", "Smarter – Intelligent Automation", "Innovative – Digital Transformation"
     ];
 
     return (
@@ -17,10 +17,9 @@ export function Hero() {
             <Wrapper className="relative flex flex-wrap max-md:flex-col max-md:gap-10 items-center justify-between max-md:pt-16 max-md:text-center">
                 <VideoModal videoUrl="https://www.youtube.com/embed/9ftKYuV0Cao" className="md:hidden"/>
                 <div className="space-y-5 md:w-1/2">
-                    <Typewriter mainText={"UniqBotz Infotech Make You "} words={words} className="text-4xl lg:text-5xl font-semibold text-white"
-                                wordClassName="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent border-r-4 border-secondary pr-2"/>
-                    <p className="md:text-lg max-w-lg text-white/80 md:leading-8">Transform your business with tailored artificial intelligence that
-                        enhances efficiency, drives growth, and unlocks new opportunities for success.</p>
+                    <Typewriter mainText={"UniqBotz Infotech Make You "} words={words} className="text-4xl font-semibold text-white"
+                                wordClassName="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent pr-2"/>
+                    <p className="md:text-lg max-w-lg text-white/80 md:leading-8">Transform your business operations with custom RPA solutions that streamline processes, boost productivity, and unlock new efficiencies for sustainable growth.</p>
                     <div className="flex max-md:flex-col items-center gap-3">
                         <Button className="rounded-full text-white font-medium" asChild>
                             <Link href="/contact">
