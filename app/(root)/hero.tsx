@@ -22,9 +22,8 @@ export function Hero() {
                     <p className="md:text-lg max-w-lg text-white/80 md:leading-8">Transform your business with tailored artificial intelligence that
                         enhances efficiency, drives growth, and unlocks new opportunities for success.</p>
                     <div className="flex max-md:flex-col items-center gap-3">
-                        <Button className="rounded-full text-white font-medium" sChild>
+                        <Button className="rounded-full text-white font-medium" asChild>
                             <Link href="/contact">
-
                                 Get Started
                             </Link>
                         </Button>
