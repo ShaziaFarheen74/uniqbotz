@@ -2,6 +2,7 @@ import Wrapper from "@/components/wrapper";
 import Image from "next/image";
 import {Button} from "@/components/ui/button";
 import {Input} from "@/components/ui/input";
+import FadeSlideWrapper from "@/components/fade-in-wrapper";
 
 export function BlogArea() {
     return (
@@ -17,11 +18,14 @@ export function BlogArea() {
                     <BlogCard />
                 </div>
                 <div className="space-y-7">
-                    <div>
+                    <FadeSlideWrapper>
                         <Input placeholder="Search..." className="rounded-[99999px] h-11 border-foreground"/>
-                    </div>
+                    </FadeSlideWrapper>
                     <div className="space-y-7">
+                        <FadeSlideWrapper>
+
                         <h2 className="py-2 border-b-2 border-primary">Don&apos;t miss</h2>
+                        </FadeSlideWrapper>
                         <DontMissCard/>
                         <DontMissCard/>
                         <DontMissCard/>
@@ -40,17 +44,17 @@ export function BlogArea() {
 
 function DontMissCard() {
     return (
-        <div>
+        <FadeSlideWrapper>
             <div><Image src={"/blog1.jpg"} alt={"blog 1"} width={576} height={324}/></div>
             <h3 className="text-xs text-primary uppercase mt-1">Eu council reunites</h3>
             <p className="text-xs">Nov 29, 2025</p>
-        </div>
+        </FadeSlideWrapper>
     )
 }
 
 function BlogCard({}) {
     return (
-        <div className="border p-7 space-y-6">
+        <FadeSlideWrapper className="border p-7 space-y-6">
             <div className="space-y-4">
                 <div><Image src={"/blog1.jpg"} alt={"blog 1"} width={576} height={324}/></div>
                 <div className="text-xs text-muted-foreground uppercase flex items-center gap-x-7">
@@ -64,6 +68,6 @@ function BlogCard({}) {
                 <p className="text-foreground/80 text-[0.9rem]">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure architecto quaerat eaque sapiente accusantium ad ut explicabo consequuntur fuga quidem? Sint...</p>
                 <Button className="bg-primary/80 hover:bg-primary">Read More</Button>
             </div>
-        </div>
+        </FadeSlideWrapper>
     )
 }

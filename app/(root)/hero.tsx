@@ -24,9 +24,6 @@ export function Hero() {
                         <Button className="rounded-full text-white font-medium">
                             Get Started
                         </Button>
-                        <Button variant="outline" className="rounded-full">
-                            Get Started
-                        </Button>
                     </div>
                 </div>
                 <VideoModal videoUrl="https://www.youtube.com/embed/9ftKYuV0Cao" className="absolute max-md:hidden -top-20 left-1/2 -translate-x-1/2 play-btn before:bg-secondary" />

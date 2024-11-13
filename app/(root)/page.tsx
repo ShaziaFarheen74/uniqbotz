@@ -4,7 +4,7 @@ import {Services} from "@/app/(root)/services";
 import {About} from "@/app/(root)/about";
 import {Testimonials} from "@/components/testimonials";
 import {WhyChooseUs} from "@/components/why-choose.us";
-import {Cta2} from "@/app/contact/cta-2";
+import {Cta2} from "@/components/cta-2";
 
 export default function Home() {
     return (
@@ -20,7 +20,7 @@ export default function Home() {
             {/*    <Cta />*/}
             {/*    <Footer />*/}
             {/*</div>*/}
-            <Cta2 headerText="Are you Ready? Let&apos;s Work!" link={"#"} linkLabel={"Read More"} />
+            <Cta2 headerText="Are you Ready? Let&apos;s Work!" link={"/contact"} linkLabel={"Let's Work!"} />
         </>
     );
 }

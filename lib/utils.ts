@@ -13,3 +13,5 @@ export const formatNumber = (num: number) => {
     }
     return num.toString();
 };
+
+export const MAX_FILE_SIZE = 3000000;

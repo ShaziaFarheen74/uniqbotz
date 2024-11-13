@@ -1,7 +1,7 @@
 import {Hero} from "@/app/contact/hero";
 import {TalkToUs} from "@/app/contact/talk-to-us";
 import {ContactForm} from "@/app/contact/contact-form";
-import {Cta2} from "@/app/contact/cta-2";
+import {Cta2} from "@/components/cta-2";
 
 export default function ContactPage() {
     return (

@@ -1,6 +1,7 @@
 import Wrapper from "@/components/wrapper";
 import {Button} from "@/components/ui/button";
 import {ArrowRightIcon} from "@radix-ui/react-icons";
+import FadeSlideWrapper from "@/components/fade-in-wrapper";
 
 export function TalkToUs() {
     return (
@@ -18,7 +19,7 @@ export function TalkToUs() {
 
 function TalkToUsCard({headerText, description, link, linkLabel}: {headerText: string, description: string; link: string; linkLabel: string}) {
     return (
-        <div className="text-center px-7 py-10 min-h-72 flex flex-col items-center justify-between rounded-lg border space-y-7 transition hover:border-primary">
+        <FadeSlideWrapper className="text-center px-7 py-10 min-h-72 flex flex-col items-center justify-between rounded-lg border space-y-7 transition hover:border-primary">
             <h2 className="text-2xl">{headerText}</h2>
             <p className="text-foreground/80">{description}</p>
             <Button className="font-medium text-base" variant="outline" asChild>
@@ -27,6 +28,6 @@ function TalkToUsCard({headerText, description, link, linkLabel}: {headerText: s
                     <ArrowRightIcon />
                 </a>
             </Button>
-        </div>
+        </FadeSlideWrapper>
     )
 }

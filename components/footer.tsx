@@ -1,9 +1,9 @@
-import { FacebookIcon } from "@/components/icons/facebook-fill";
-import { InstagramIcon } from "@/components/icons/instagram-fill";
-import { LinkedInIcon } from "@/components/icons/linked-in-fill";
-import { Logo } from "@/components/logo";
-import { Button } from "@/components/ui/button";
-import { Separator } from "@/components/ui/separator";
+import {FacebookIcon} from "@/components/icons/facebook-fill";
+import {InstagramIcon} from "@/components/icons/instagram-fill";
+import {LinkedInIcon} from "@/components/icons/linked-in-fill";
+import {Logo} from "@/components/logo";
+import {Button} from "@/components/ui/button";
+import {Separator} from "@/components/ui/separator";
 import Wrapper from "@/components/wrapper";
 import Link from "next/link";
 
@@ -13,7 +13,6 @@ export function Footer() {
     return (
         <footer className="bg-muted py-20 h-fit">
             <Wrapper className="flex justify-center items-center flex-col space-y-7">
-
                 <Logo/>
                 <div className="space-y-">
                     <Button variant="link" className="text-foreground/80" asChild>
@@ -59,10 +58,9 @@ export function Footer() {
 
                 </div>
                 <div className="text-center text-muted-foreground">
-                    <p className="text-sm">&copy; Copyright { currentYear } by Uniqbotz.</p>
+                    <p className="text-sm">&copy; Copyright {currentYear} by Uniqbotz.</p>
                 </div>
             </Wrapper>
-
         </footer>
     )
 }

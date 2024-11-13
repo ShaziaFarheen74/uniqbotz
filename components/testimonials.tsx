@@ -1,59 +1,54 @@
 'use client'
 
 import Autoplay from "embla-carousel-autoplay"
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
-import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
+import {Avatar, AvatarFallback, AvatarImage} from "@/components/ui/avatar";
+import {Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious} from "@/components/ui/carousel";
 import Wrapper from "@/components/wrapper";
+import {SectionHeader} from "@/components/section-header";
+import FadeSlideWrapper from "@/components/fade-in-wrapper";
 
 
 export const TestimonialsData = [
     {
-        name: "Azeez Adegbenro",
-        // imageUrl: "/images/home/testimonials/placeholder-male.webp",
-        title: "Associate, HR  & Administration, Greenlight Planet",
-        quote: `FinQuest has been and is still part of my career growth. FinQuest made it possible for me to attend Edubridge Graduate Program and Power BI Bootcamp Class by Foresight BI where I learnt HR and Data Analytics respectively. The programs earned me my current employment.
-      FinQuest stands out for me as an Interest-free Edu-loan company`,
+        name: "John Smith",
+        title: "Associate, Solar Planet",
+        quote: `Uniqbotz has played a pivotal role in my professional growth. With their support, I participated in various advanced training programs, which equipped me with essential skills and knowledge. These learning experiences have been instrumental in advancing my career and achieving professional milestones. Uniqbotz stands out for its dedication to making innovative learning accessible, empowering individuals to pursue their career ambitions without financial constraints.`,
     },
     {
-        name: "Ismail Idowu",
+        name: "Priya Patit",
         // imageUrl: "/images/home/testimonials/placeholder-male.webp",
-        title: "Network Engineer, Plantation Industries Limited",
-        quote: `Learning is part of your journey towards self-actualization. FinQuest helped me achieve my goal of becoming a data scientist by funding my training with 10Alytics with their zero-interest credit facility`,
+        title: "Network Engineer",
+        quote: `Uniqbotz has played a pivotal role in my professional growth. With their support, I participated in various advanced training programs, which equipped me with essential skills and knowledge. These learning experiences have been instrumental in advancing my career and achieving professional milestones. Uniqbotz stands out for its dedication to making innovative learning accessible, empowering individuals to pursue their career ambitions without financial constraints.`,
     },
     {
-        name: "David Francis Effiong",
-        // imageUrl: "/images/home/testimonials/placeholder-male.webp",
-        title: "2022 Mandela Washington Fellow",
-        quote: `I was relocating to a new State when I came across FinQuest and their Edu-loan scheme. It was a post made by Professor Ndubuisi and I felt this was my best shot at getting a Mini-MBA.
-        A call from FinQuest confirming my application solidified my resolve to go ahead with it at 0% interest. It felt so surreal! It was a bet I'm forever proud and grateful for. Education made possible and accessible is what these guys are doing. Who wouldn't want that?`,
+        name: "Francis Brown",
+        title: "Data Engineer",
+        quote: `Uniqbotz has played a pivotal role in my professional growth. With their support, I participated in various advanced training programs, which equipped me with essential skills and knowledge. These learning experiences have been instrumental in advancing my career and achieving professional milestones. Uniqbotz stands out for its dedication to making innovative learning accessible, empowering individuals to pursue their career ambitions without financial constraints.`,
     },
     {
         name: "Janet Snow",
-        // imageUrl: "/images/home/testimonials/placeholder-female.webp",
-        title: "Investment Analyst, P&G",
-        quote: `I have been following Tekedia mini MBA programs for months. When it finally opened, the amount to be paid for the course wasn't captured in my budget and I needed an option.
-        I got to know about FinQuest zero interest loan on LinkedIn, to cut the story short I gave it a try. It was amazing, It helped me split the application fee over 3 months and relieved me of the burden of paying at once. My mini MBA journey won't be completed without FinQuest.
-        Thanks to FinQuest Team`,
+        title: "Web developer",
+        quote: `Uniqbotz has played a pivotal role in my professional growth. With their support, I participated in various advanced training programs, which equipped me with essential skills and knowledge. These learning experiences have been instrumental in advancing my career and achieving professional milestones. Uniqbotz stands out for its dedication to making innovative learning accessible, empowering individuals to pursue their career ambitions without financial constraints.`,
     },
 ]
 
 export function Testimonials() {
     return (
         <section id="testimonials" className="py-20 space-y-16">
-            <div className="text-center">
-                <span className="text-primary text-sm">What our clients say?</span>
-            </div>
+            <SectionHeader text={"What our clients say?"}/>
             <Wrapper className="container space-y-10">
                 <div className="text-center space-y-16">
-
-                    {/*<SectionTag text="What our clients say?"/>*/}
                     <div>
-                        <h2 className="text-3xl font-semibold">Take the words of our recipients for it</h2>
-                        <p className="md:text-lg max-w-2xl mx-auto">Problems trying to resolve the conflict between the
-                            two major realms of Classical physics: Newtonian mechanics </p>
+                        <FadeSlideWrapper>
+                            <h2 className="text-3xl font-semibold">Take the words of our recipients for it</h2>
+                        </FadeSlideWrapper>
+                        <FadeSlideWrapper>
+                            <p className="md:text-lg max-w-2xl mx-auto">Problems trying to resolve the conflict between the
+                                two major realms of Classical physics: Newtonian mechanics </p>
+                        </FadeSlideWrapper>
                     </div>
                 </div>
-                <div>
+                <FadeSlideWrapper>
                     <Carousel className="w-full max-w-2xl mx-auto" opts={{
                         loop: true,
                     }} plugins={[
@@ -85,7 +80,7 @@ export function Testimonials() {
                             <CarouselNext className="hover:bg-secondary/30 relative"/>
                         </div>
                     </Carousel>
-                </div>
+                </FadeSlideWrapper>
             </Wrapper>
         </section>
     )

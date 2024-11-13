@@ -13,6 +13,7 @@ import {toast} from "sonner";
 import {useState} from "react";
 import {Spinner} from "@/components/icons/spinner";
 import {cn} from "@/lib/utils";
+import FadeSlideWrapper from "@/components/fade-in-wrapper";
 
 const formSchema = z.object({
     name: z.string().min(1, {
@@ -99,7 +100,7 @@ export function ContactForm() {
     }
 
     return (
-        <div className="pb-20">
+        <FadeSlideWrapper className="pb-20">
             <Wrapper className="max-w-lg mx-auto">
                 <h1 className="mb-9 text-3xl">Get In Touch</h1>
                 <Form {...form}>
@@ -151,7 +152,7 @@ export function ContactForm() {
                     </form>
                 </Form>
             </Wrapper>
-        </div>
+        </FadeSlideWrapper>
 
     )
 }

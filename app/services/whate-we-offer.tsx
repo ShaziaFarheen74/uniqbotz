@@ -13,6 +13,8 @@ import {BankIcon} from "@/components/icons/bank";
 import {CarIcon} from "@/components/icons/car";
 import Image from "next/image";
 import React, {useEffect, useRef} from "react";
+import FadeSlideWrapper from "@/components/fade-in-wrapper";
+import {SectionHeader} from "@/components/section-header";
 
 export function WhateWeOffer() {
     const imageElementRef = useRef<HTMLImageElement | null>(null);
@@ -41,15 +43,21 @@ export function WhateWeOffer() {
         <div className="py-20 space-y-20">
 
             <div className="text-center space-y-10">
-                <span className="text-primary text-sm">About Us</span>
+                <SectionHeader text={"Where We Work"} />
             <div className="text-center space-y-4 max-w-3xl mx-auto">
+                <FadeSlideWrapper>
+
                 <h2 className="text-4xl">Industries We Serve</h2>
+                </FadeSlideWrapper>
+                <FadeSlideWrapper>
+
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates magni fugit, quod iure quibusdam, omnis nisi cum, nostrum
                     nulla deleniti mollitia tenetur.</p>
+                </FadeSlideWrapper>
             </div>
             </div>
 
-            <Wrapper className="max-w-screen-xl grid md:grid-cols-3 items-center gap-10">
+            <Wrapper className="max-w-screen-xl grid md:grid-cols-3 justify-center items-center gap-10">
                 <div className="space-y-7">
                     <WhatWeOfferCard className="rounded-full rounded-r-none" icon={<BuildingIcon className="fill-primary/80 group-hover:fill-white h-7 w-7 duration-500"/>} headerText={"Heavy Industries"} description={"All kinds of industries"}/>
                     <WhatWeOfferCard className="rounded-full rounded-r-none" icon={<TrainIcon className="fill-primary/80 group-hover:fill-white h-7 w-7 duration-500"/>} headerText={"Transportation"} description={"All kinds of industries"}/>
@@ -75,7 +83,7 @@ export function WhateWeOffer() {
 
 function WhatWeOfferCard({icon, headerText, description, className, hoverDirection}: { icon?: React.ReactElement; headerText?: string; description?: string; className?: string; hoverDirection?: "left" | "right" }) {
     return (
-        <div className={cn("flex items-center justify-between p-10 shadow-all relative overflow-hidden group" +
+        <FadeSlideWrapper className={cn("flex items-center justify-between p-10 shadow-all relative overflow-hidden group" +
             " hover:text-white", className)}>
             <div className={cn("absolute inset-0 w-full scale-x-0 group-hover:scale-x-100 transition duration-500 h-full bg-primary/80" +
                 " -z-10", hoverDirection === "left" ? "origin-right": "origin-left")} />
@@ -87,6 +95,6 @@ function WhatWeOfferCard({icon, headerText, description, className, hoverDirecti
                 </div>
             </div>
             <DoubleArrowRightIcon className="h-5 w-5 duration-1000"/>
-        </div>
+        </FadeSlideWrapper>
     )
 }
