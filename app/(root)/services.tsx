@@ -7,7 +7,7 @@ export function Services() {
         <div className="pb-40">
             <Wrapper className="space-y-12">
                 <FadeSlideWrapper className="text-center max-w-screen-md mx-auto space-y-4">
-                    <h2 className="text-4xl font-semibold">We offer a wide range of services and provide complete client satisfication</h2>
+                    <h2 className="text-3xl md:text-4xl font-semibold">We offer a wide range of services and provide complete client satisfication</h2>
                     <p>Collision course, starlight travel, and alarm.Per guest prepare one jar of emeril&apos;s essence with drained pumpkin seeds for
                         dessert.</p>
                 </FadeSlideWrapper>

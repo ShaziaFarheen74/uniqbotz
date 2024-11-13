@@ -32,11 +32,13 @@ export function Hero() {
                 <VideoModal videoUrl="https://www.youtube.com/embed/9ftKYuV0Cao"
                             className="absolute max-md:hidden -top-20 left-1/2 -translate-x-1/2 play-btn before:bg-secondary"/>
                 <div className="relative md:w-1/2">
-                    <Image src={"/shape1.png"} alt={"2"} width={800} height={608}
-                           className="max-md:hidden -z-10 animate-bounc absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2"/>
-                    <Image src={"/shape2.png"} alt={"hero"} width={250} height={380}
-                           className="max-md:hidden z-10 absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2"/>
-                    <Image src={"/website-images/images/4.png"} alt={"hero"} width={602} height={417} className="md:hidden"/>
+                    {/*<Image src={"/shape1.png"} alt={"2"} width={800} height={608}*/}
+                    {/*       className="max-md:hidden -z-10 animate-bounc absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2"/>*/}
+                    {/*<Image src={"/shape2.png"} alt={"hero"} width={250} height={380}*/}
+                    {/*       className="max-md:hidden z-10 absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2"/>*/}
+                    {/*<Image src={"/website-images/images/4.png"} alt={"hero"} width={602} height={417} className="md:hidden"/>*/}
+                    <Image src={"/about1.png"} alt={"hero"} width={602} height={417} className="z-10 absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2"/>
+                    <Image src={"/about1.png"} alt={"hero"} width={602} height={417} className="md:hidden"/>
 
                 </div>
             </Wrapper>

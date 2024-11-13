@@ -10,7 +10,7 @@ export function WhyChooseUs() {
                 <div className="text-center space-y-4 max-w-3xl mx-auto">
                     <FadeInWrapper>
 
-                        <h2 className="text-4xl">Our Platform takes away the hard Process of creating your website</h2>
+                        <h2 className="text-2xl md:text-4xl">Our Platform takes away the hard Process of creating your website</h2>
                     </FadeInWrapper>
                     <FadeInWrapper>
 
@@ -37,7 +37,7 @@ export function WhyChooseUs() {
 
 function WhyChooseUsCard({number, headerText, description}: {number: string; headerText: string; description: string}) {
     return (
-        <FadeInWrapper className="relative p-8 bg-white transition-all flex gap-x-8 rounded-md shadow">
+        <FadeInWrapper className="relative p-8 bg-white transition-all flex max-md:flex-col max-md:text-center gap-x-8 rounded-md shadow">
             <span
                 className="w-fit p-3.5 inline-grid place-content-center h-16 -3.5 leading-[64px] text-center border-2 border-dotted border-white text-4xl font-semibold span-animation bg-primary/20 mx-auto mb-6">{number}</span>
             {/*<span className="rounded-full inline-block absolute left-8"></span>*/}

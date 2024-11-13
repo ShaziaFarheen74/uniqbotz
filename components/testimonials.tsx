@@ -37,8 +37,7 @@ export function Testimonials() {
         <section id="testimonials" className="py-20 space-y-16">
             <SectionHeader text={"What our clients say?"}/>
             <Wrapper className="container space-y-10">
-                <div className="text-center space-y-16">
-                    <div>
+                <div className="text-center space-y-8">
                         <FadeSlideWrapper>
                             <h2 className="text-3xl font-semibold">Take the words of our recipients for it</h2>
                         </FadeSlideWrapper>
@@ -46,7 +45,6 @@ export function Testimonials() {
                             <p className="md:text-lg max-w-2xl mx-auto">Problems trying to resolve the conflict between the
                                 two major realms of Classical physics: Newtonian mechanics </p>
                         </FadeSlideWrapper>
-                    </div>
                 </div>
                 <FadeSlideWrapper>
                     <Carousel className="w-full max-w-2xl mx-auto" opts={{

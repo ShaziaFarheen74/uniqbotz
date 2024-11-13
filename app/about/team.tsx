@@ -9,7 +9,7 @@ import FadeSlideWrapper from "@/components/fade-in-wrapper";
 export function Team() {
     return (
         <div id="team" className="py-20 space-y-20">
-            <div className="max-w-screen-md mx-auto text-center space-y-10">
+            <div className="container max-w-screen-md mx-auto text-center space-y-10">
 
             <SectionHeader text={"Team"} />
                 <FadeSlideWrapper>

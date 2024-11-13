@@ -13,7 +13,7 @@ export function Achievements() {
                 <div className="space-y-8">
                     <FadeSlideWrapper>
 
-                        <h1 className="text-3xl">Make Your Business More Competitive And Enduring</h1>
+                        <h1 className="text-2xl md:text-3xl">Make Your Business More Competitive And Enduring</h1>
                     </FadeSlideWrapper>
                     <div className="space-y-5">
                         <FadeSlideWrapper className="flex gap-6">

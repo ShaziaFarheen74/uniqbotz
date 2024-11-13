@@ -13,7 +13,7 @@ export function About() {
                 </FadeInWrapper>
                 <div className="space-y-6 flex-1">
                     <FadeInWrapper>
-                        <h2 className="text-4xl font-semibold">A Straight forward structure for powerful automation results</h2>
+                        <h2 className="text-3xl md:text-4xl font-semibold">A Straight forward structure for powerful automation results</h2>
                     </FadeInWrapper>
                     <FadeInWrapper>
                         <p className='text-foreground/80 md:text-lg md:leading-7'>Stigma at the moon was the definition of rumour, dissolved to a

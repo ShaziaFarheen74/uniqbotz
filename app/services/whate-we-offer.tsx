@@ -44,10 +44,10 @@ export function WhateWeOffer() {
 
             <div className="text-center space-y-10">
                 <SectionHeader text={"Where We Work"} />
-            <div className="text-center space-y-4 max-w-3xl mx-auto">
+            <div className="text-center space-y-4 max-w-3xl mx-auto container">
                 <FadeSlideWrapper>
 
-                <h2 className="text-4xl">Industries We Serve</h2>
+                <h2 className="text-3xl md:text-4xl">Industries We Serve</h2>
                 </FadeSlideWrapper>
                 <FadeSlideWrapper>
 
