@@ -9,10 +9,10 @@ import {Form, FormControl, FormField, FormItem, FormLabel, FormMessage,} from "@
 import {Select, SelectContent, SelectItem, SelectTrigger, SelectValue,} from "@/components/ui/select"
 import {Input} from "@/components/ui/input"
 import Wrapper from "@/components/wrapper";
-import {toast} from "sonner";
-import {useState} from "react";
-import {Spinner} from "@/components/icons/spinner";
-import {cn, MAX_FILE_SIZE} from "@/lib/utils";
+// import {toast} from "sonner";
+// import {useState} from "react";
+// import {Spinner} from "@/components/icons/spinner";
+import {cn} from "@/lib/utils";
 import FadeSlideWrapper from "@/components/fade-in-wrapper";
 
 const formSchema = z.object({
@@ -27,25 +27,25 @@ const formSchema = z.object({
     experience: z.string().min(1, {
         message: "Please select experience level",
     }),
-    resume:
-        typeof window === 'undefined'
-            ? z.any()
-            : z
-                .instanceof(FileList)
-                .optional()
-                .refine((file) => {
-                    const firstItem = file?.item?.(0);
-                    if (firstItem) {
-                        const fileType = firstItem.name.split('.').pop();
-                        return fileType === 'docx' || fileType === 'pdf';
-                    }
-                    return true;
-                }, 'File type must be .docx or .pdf')
-                .refine((file) => {
-                    const firstItem = file?.item?.(0);
-                    if (firstItem) return firstItem.size <= MAX_FILE_SIZE;
-                    return true;
-                }, 'Max size is 3MB.'),
+    // resume:
+    //     typeof window === 'undefined'
+    //         ? z.any()
+    //         : z
+    //             .instanceof(FileList)
+    //             .optional()
+    //             .refine((file) => {
+    //                 const firstItem = file?.item?.(0);
+    //                 if (firstItem) {
+    //                     const fileType = firstItem.name.split('.').pop();
+    //                     return fileType === 'docx' || fileType === 'pdf';
+    //                 }
+    //                 return true;
+    //             }, 'File type must be .docx or .pdf')
+    //             .refine((file) => {
+    //                 const firstItem = file?.item?.(0);
+    //                 if (firstItem) return firstItem.size <= MAX_FILE_SIZE;
+    //                 return true;
+    //             }, 'Max size is 3MB.'),
 })
 
 // const NEXT_PUBLIC_SERVICE_ID = process.env.NEXT_PUBLIC_SERVICE_ID;
@@ -79,17 +79,16 @@ const formSchema = z.object({
 
 
 export function CareerForm() {
-    const [isPendingMessage, setIsPendingMessage] = useState(false);
     const form = useForm<z.infer<typeof formSchema>>({
         resolver: zodResolver(formSchema),
         defaultValues: {
             name: "",
             email: "",
             experience: "",
-            resume: ""
+            // resume: ""
         },
     })
-    const resumeRef = form.register('resume');
+    // const resumeRef = form.register('resume');
 
     // 2. Define a submit handler.
     async function onSubmit(values: z.infer<typeof formSchema>) {
@@ -107,18 +106,11 @@ export function CareerForm() {
         //         experience: values.experience
         //     }
         // };
-        try {
-            setIsPendingMessage(true);
-            // await sendEmail(emailData);
-            // console.log("Email sent successfully:", result);
-            form.reset()
-            toast.info("Thank you for reaching out! We are currently working on this feature.");
-        } catch {
-            // console.error("Error sending email:", e);
-            toast.error("Failed to send your message. Please check your internet connection or try again in a moment.");
-        } finally {
-            setIsPendingMessage(false);
-        }
+        const mailtoLink = `mailto:someone@example.com?subject=Application%20Submission%20for%20Careers&body=Name:%20${encodeURIComponent(values.name)}%0D%0AEmail:%20${encodeURIComponent(values.email)}%0D%0AExperienceLevel:%20${encodeURIComponent(values.experience)}`;
+
+        // Open the user's default mail client with the prefilled content
+        form.reset()
+        window.location.href = mailtoLink;
     }
 
     return (
@@ -175,26 +167,27 @@ export function CareerForm() {
                                 </FormItem>
                             )}
                         />
-                        <FormField
-                            control={form.control}
-                            name="resume"
-                            render={() => (
-                                <FormItem>
-                                    <FormLabel className="text-lg font-semibold">Resume</FormLabel>
-                                    <FormControl>
-                                        <Input {...resumeRef} type="file"
-                                               accept="application/pdf,.pdf,application/vnd.openxmlformats-officedocument.wordprocessingml.document,.docx"
-                                               className="h-12" placeholder="Upload your resume" />
-                                    </FormControl>
-                                    <FormMessage/>
-                                </FormItem>
-                            )}
-                        />
-                        <Button type="submit" disabled={isPendingMessage} aria-disabled={isPendingMessage} className={cn("h-12 space-x-1 w-full" +
-                            " text-base", isPendingMessage && "cursor-not-allowed")}>
-                            {isPendingMessage && (<Spinner className="animate-spin"/>)}
-                            <span>Submit</span>
-                        </Button>
+                        {/*<FormField*/}
+                        {/*    control={form.control}*/}
+                        {/*    name="resume"*/}
+                        {/*    render={() => (*/}
+                        {/*        <FormItem>*/}
+                        {/*            <FormLabel className="text-lg font-semibold">Resume</FormLabel>*/}
+                        {/*            <FormControl>*/}
+                        {/*                <Input {...resumeRef} type="file"*/}
+                        {/*                       accept="application/pdf,.pdf,application/vnd.openxmlformats-officedocument.wordprocessingml.document,.docx"*/}
+                        {/*                       className="h-12" placeholder="Upload your resume" />*/}
+                        {/*            </FormControl>*/}
+                        {/*            <FormMessage/>*/}
+                        {/*        </FormItem>*/}
+                        {/*    )}*/}
+                        {/*/>*/}
+                        {/*<Button type="submit" disabled={isPendingMessage} aria-disabled={isPendingMessage} className={cn("h-12 space-x-1 w-full" +*/}
+                        {/*    " text-base", isPendingMessage && "cursor-not-allowed")}>*/}
+                        {/*    {isPendingMessage && (<Spinner className="animate-spin"/>)}*/}
+                        {/*    <span>Submit</span>*/}
+                        {/*</Button>*/}
+                        <Button className={cn("h-12 space-x-1 w-full text-base")}>Upload Resume Through Mail</Button>
                     </form>
                 </Form>
             </Wrapper>
