@@ -51,10 +51,10 @@ export const Routes: Route[] = [
         ]
 
     },
-    {
-        label: "Blog",
-        path: "/blog",
-    },
+    // {
+    //     label: "Blog",
+    //     path: "/blog",
+    // },
     {
         label: "About",
         path: "/about",

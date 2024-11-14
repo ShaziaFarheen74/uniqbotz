@@ -12,8 +12,8 @@ export function Faqs() {
                         <h1 className="text-2xl md:text-4xl mb-2">Frequently Asked Questions</h1>
                     </FadeSlideWrapper>
                     <FadeSlideWrapper>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                            Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</p>
+                        <p><span className="font-bold">Have questions about how Robotic Process Automation (RPA) can transform your business?</span>
+                            <br/>Explore our frequently asked questions below to learn more about our RPA solutions, services, and how we can support your automation journey.”</p>
                     </FadeSlideWrapper>
                 </div>
                 <div className="grid md:grid-cols-2 gap-8 items-center">
@@ -25,55 +25,63 @@ export function Faqs() {
                             <FadeSlideWrapper>
 
                                 <AccordionItem value="item-1">
-                                    <AccordionTrigger className="text-lg">What are the objectives of this software?</AccordionTrigger>
+                                    <AccordionTrigger className="text-lg">How can RPA benefit my business?</AccordionTrigger>
                                     <AccordionContent>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                                        magna aliqua.
-                                        Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.
+                                        RPA can help reduce operational costs, improve accuracy, enhance productivity, and streamline workflows by automating time-consuming processes. It is particularly effective in areas like data entry, invoice processing, customer support, and report generation.
                                     </AccordionContent>
                                 </AccordionItem>
                             </FadeSlideWrapper>
                             <FadeSlideWrapper>
 
                                 <AccordionItem value="item-2">
-                                    <AccordionTrigger className="text-lg">What is the best features and services we deliver?</AccordionTrigger>
+                                    <AccordionTrigger className="text-lg">Is RPA suitable for all industries?</AccordionTrigger>
                                     <AccordionContent>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                                        magna aliqua.
-                                        Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.
+                                        Yes, RPA can be applied across various industries, including finance, healthcare, retail, manufacturing, and customer service. The key requirement is that the tasks to be automated are repetitive, rule-based, and follow structured workflows.
                                     </AccordionContent>
                                 </AccordionItem>
                             </FadeSlideWrapper>
                             <FadeSlideWrapper>
 
                                 <AccordionItem value="item-3">
-                                    <AccordionTrigger className="text-lg">Why is this app important to me?</AccordionTrigger>
+                                    <AccordionTrigger className="text-lg">How do I know if RPA is right for my organization?</AccordionTrigger>
                                     <AccordionContent>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                                        magna aliqua.
-                                        Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.
+                                        If your business processes are repetitive, time-consuming, and involve a lot of manual data handling, RPA is likely a good fit. A detailed assessment of your workflows by an RPA consultant can help determine which processes can be automated to maximize efficiency.
                                     </AccordionContent>
                                 </AccordionItem>
                             </FadeSlideWrapper>
                             <FadeSlideWrapper>
 
                                 <AccordionItem value="item-4">
-                                    <AccordionTrigger className="text-lg">How may I take part in and purchase this software?</AccordionTrigger>
+                                    <AccordionTrigger className="text-lg">What is the typical implementation timeline for RPA?</AccordionTrigger>
                                     <AccordionContent>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                                        magna aliqua.
-                                        Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.
+                                        RPA implementation time varies depending on the complexity and scope of the processes to be automated. Generally, simple processes can be automated in a few weeks, while more complex workflows might take a few months. A typical implementation timeline might range from 4-12 weeks.
                                     </AccordionContent>
                                 </AccordionItem>
                             </FadeSlideWrapper>
                             <FadeSlideWrapper>
 
                                 <AccordionItem value="item-5">
-                                    <AccordionTrigger className="text-lg">Is it accessible?</AccordionTrigger>
+                                    <AccordionTrigger className="text-lg">What are the security and compliance considerations when using RPA?</AccordionTrigger>
                                     <AccordionContent>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                                        magna aliqua.
-                                        Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.
+                                        RPA tools are designed with security in mind, offering features like role-based access control, encryption, and logging. It&apos;s important to ensure that automated processes comply with industry regulations (e.g., GDPR, HIPAA) and follow best practices for data privacy and security.
+                                    </AccordionContent>
+                                </AccordionItem>
+                            </FadeSlideWrapper>
+                            <FadeSlideWrapper>
+
+                                <AccordionItem value="item-6">
+                                    <AccordionTrigger className="text-lg">Can RPA scale with my business as it grows?</AccordionTrigger>
+                                    <AccordionContent>
+                                        Yes, RPA is highly scalable. As your business grows, you can easily add more bots to handle increased workloads. Most RPA platforms are designed to scale efficiently, allowing you to automate additional processes without significant rework.
+                                    </AccordionContent>
+                                </AccordionItem>
+                            </FadeSlideWrapper>
+                            <FadeSlideWrapper>
+
+                                <AccordionItem value="item-7">
+                                    <AccordionTrigger className="text-lg">Do you offer RPA consulting services?</AccordionTrigger>
+                                    <AccordionContent>
+                                        Yes, we provide RPA consulting to help businesses assess their processes, develop automation strategies, and implement RPA solutions tailored to their specific needs. Our consultants work closely with your team to ensure a smooth transition to automation.
                                     </AccordionContent>
                                 </AccordionItem>
                             </FadeSlideWrapper>

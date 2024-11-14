@@ -5,8 +5,8 @@ import {Button} from "@/components/ui/button";
 export function SharedHero({sectionHeader, sectionText}: {sectionHeader: string; sectionText: string}) {
     return (
         <div className="bg-gradient-to-r from-[#4E03A1] to-[#4E03A1] text-white pt-20">
-            <Wrapper className="min-h-56 grid place-content-center justify-items-center gap-3">
-                <h1 className="text-4xl text-center">{sectionHeader}</h1>
+            <Wrapper className="min-h-36 grid place-content-center justify-items-center gap-3">
+                <h1 className="text-3xl md:text-4xl text-center">{sectionHeader}</h1>
                 <div className="flex gap-x-2 items-center text-lg">
                     <Button variant="link" className="px-0 text-base" asChild>
                     <Link href="/" className="text-white/80">Home</Link>

@@ -7,7 +7,7 @@ export default function Typewriter({mainText, words, className, wordClassName}: 
   const [currentWord, setCurrentWord] = useState('');
   const [isDeleting, setIsDeleting] = useState(false);
   const [wordIndex, setWordIndex] = useState(0);
-  const [speed, setSpeed] = useState(200);
+  const [speed, setSpeed] = useState(90);
 
   useEffect(() => {
     const handleTyping = () => {
@@ -19,11 +19,11 @@ export default function Typewriter({mainText, words, className, wordClassName}: 
       setCurrentWord(updatedWord);
 
       // Adjust typing speed when deleting
-      const typingSpeed = isDeleting ? 100 : 200;
+      const typingSpeed = isDeleting ? 50 : 90;
       setSpeed(typingSpeed);
 
       if (!isDeleting && updatedWord === currentFullWord) {
-        setTimeout(() => setIsDeleting(true), 2000);
+        setTimeout(() => setIsDeleting(true), 1000);
       } else if (isDeleting && updatedWord === '') {
         setIsDeleting(false);
         setWordIndex((prev) => (prev + 1) % words.length);

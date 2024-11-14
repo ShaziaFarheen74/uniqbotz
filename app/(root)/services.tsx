@@ -8,8 +8,7 @@ export function Services() {
             <Wrapper className="space-y-12">
                 <FadeSlideWrapper className="text-center max-w-screen-md mx-auto space-y-4">
                     <h2 className="text-3xl md:text-4xl font-semibold">We deliver a comprehensive suite of RPA solutions, ensuring seamless automation and complete client satisfaction.</h2>
-                    <p>Collision course, starlight travel, and alarm.Per guest prepare one jar of emeril&apos;s essence with drained pumpkin seeds for
-                        dessert.</p>
+                    <p>Add on BOTs, Increased Quality BOTs, BOT execution tracker, Quick deployment – Smooth operations, Zero frustrations</p>
                 </FadeSlideWrapper>
                 <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-12 justify-items-center">
                     <ServiceCard imageSrc={`/s1.png`} headerText={"RPA"} description={"Robotic Process Automation (RPA) automates repetitive tasks, allowing software bots to handle routine workflows. This boosts efficiency, reduces errors, and frees up employees for more complex work."}/>

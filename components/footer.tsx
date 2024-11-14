@@ -16,20 +16,20 @@ export function Footer() {
                 <Logo/>
                 <div className="space-y-">
                     <Button variant="link" className="text-foreground/80" asChild>
-                        <a href="mailto:info@finquestfinance.com" target="_blank" rel="noreferrer">
-                            info@uniqbotz.com
+                        <a href="mailto:sales@uniqbotz.com" target="_blank" rel="noreferrer">
+                            sales@uniqbotz.com
                         </a>
                     </Button>
                     <div className="flex justify-between">
-                        <a href="/kdl" target="_blank" rel="noreferrer"
+                        <a href="https://www.linkedin.com/company/uniqbotz/about" target="_blank" rel="noreferrer"
                            className="inline-flex items-center justify-center h-10 w-10 rounded-full bg-primary/80">
                             <LinkedInIcon className="h-5 w-5 fill-white"/>
                         </a>
-                        <a href="/kdl" target="_blank" rel="noreferrer"
+                        <a href="https://www.linkedin.com/company/uniqbotz/about" target="_blank" rel="noreferrer"
                            className="inline-flex items-center justify-center h-10 w-10 rounded-full bg-primary/80">
                             <InstagramIcon className="h-5 w-5 fill-white"/>
                         </a>
-                        <a href="/kdl" target="_blank" rel="noreferrer"
+                        <a href="https://www.linkedin.com/company/uniqbotz/about" target="_blank" rel="noreferrer"
                            className="inline-flex items-center justify-center h-10 w-10 rounded-full bg-primary/80">
                             <FacebookIcon className="h-5 w-5 fill-white"/>
                         </a>
@@ -37,23 +37,27 @@ export function Footer() {
                 </div>
                 <div className="flex flex-wrap md:h-6 justify-center items-center text-foreground/80">
                     <Button variant="link" className="text-foreground/80" asChild>
-                        <Link href="/programs">Home</Link>
+                        <Link href="/">Home</Link>
                     </Button>
                     <Separator orientation="vertical" className="w-0.5 max-sm:hidden"/>
                     <Button variant="link" className="text-foreground/80" asChild>
-                        <Link href="/programs">About</Link>
+                        <Link href="/about">About</Link>
                     </Button>
                     <Separator orientation="vertical" className="w-0.5 max-sm:hidden"/>
                     <Button variant="link" className="text-foreground/80" asChild>
-                        <Link href="/programs">Services</Link>
+                        <Link href="/services">Services</Link>
                     </Button>
                     <Separator orientation="vertical" className="w-0.5 max-sm:hidden"/>
                     <Button variant="link" className="text-foreground/80" asChild>
-                        <Link href="/programs">Careers</Link>
+                        <Link href="/careers">Careers</Link>
                     </Button>
                     <Separator orientation="vertical" className="w-0.5 max-sm:hidden"/>
                     <Button variant="link" className="text-foreground/80" asChild>
-                        <Link href="/programs">FAQs</Link>
+                        <Link href="/faqs">FAQs</Link>
+                    </Button>
+                    <Separator orientation="vertical" className="w-0.5 max-sm:hidden"/>
+                    <Button variant="link" className="text-foreground/80" asChild>
+                        <Link href="/contact">Contact</Link>
                     </Button>
 
                 </div>

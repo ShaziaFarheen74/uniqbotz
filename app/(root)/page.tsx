@@ -13,12 +13,6 @@ export default function Home() {
             <Services/>
             <About/>
             <WhyChooseUs/>
-            {/*<Testimonials/>*/}
-            {/*<div className="relative">*/}
-            {/*    /!*<div className="absolute inset-0 rotate-180 -z-10 w-full h-full bg-heroBg bg-no-repeat bg-cover isolate bg-[bottom_center] bg-clip-padding bg-origin-padding" />*!/*/}
-            {/*    <Cta />*/}
-            {/*    <Footer />*/}
-            {/*</div>*/}
             <Cta2 headerText="Are you Ready? Let&apos;s Work!" link={"/contact"} linkLabel={"Let's Work!"} />
         </>
     );

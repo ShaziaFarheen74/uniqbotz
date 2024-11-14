@@ -54,7 +54,7 @@ export function AboutUs() {
                         {/*    </div>*/}
                         {/*</ul>*/}
                         <ul className="space-y-4 list-disc">
-                            <h5>What We do:</h5>
+                            <h5>What we do:</h5>
                             <li className="flex gap-x-2 text-sm">
                                 <span className="bg-primary/20 p-1 h-fit rounded-full">
                                     <CheckDoubleIcon className="h-4 w-4 fill-primary"/>
@@ -74,11 +74,11 @@ export function AboutUs() {
                                     <CheckDoubleIcon className="h-4 w-4 fill-primary"/>
                                 </span>
 
-                                <span className="font-medium"><span className="font-semibold">Continuous Improvement:</span> We monitor and optimize our solutions to ensure maximum efficiency and ROI.</span>
+                                <span className="font-medium"><span className="font-semibold">Continuous Improvement: </span>We monitor and optimize our solutions to ensure maximum efficiency and ROI.</span>
                             </li>
                         </ul>
                         <ul className="space-y-4 list-disc">
-                            <h5>What Choose UniqBotz:</h5>
+                            <h5>How are we different:</h5>
                             <li className="flex gap-x-2 text-sm">
                                 <span className="bg-primary/20 p-1 h-fit rounded-full">
                                     <CheckDoubleIcon className="h-4 w-4 fill-primary"/>
@@ -91,21 +91,21 @@ export function AboutUs() {
                                     <CheckDoubleIcon className="h-4 w-4 fill-primary"/>
                                 </span>
 
-                                <span className="font-medium"><span className="font-semibold">Innovation:</span> We stay ahead of the curve, leveraging the latest RPA technologies.</span>
+                                <span className="font-medium"><span className="font-semibold">Innovation: </span>We stay ahead of the curve, leveraging the latest RPA technologies.</span>
                             </li>
                             <li className="flex gap-x-2 text-sm">
                                 <span className="bg-primary/20 p-1 h-fit rounded-full">
                                     <CheckDoubleIcon className="h-4 w-4 fill-primary"/>
                                 </span>
 
-                                <span className="font-medium"><span className="font-semibold">Customer Focus:</span>Customer Focus: We prioritize your needs and tailor our solutions to your specific requirements.</span>
+                                <span className="font-medium"><span className="font-semibold">Customer Focus: </span>We prioritize your needs and tailor our solutions to your specific requirements.</span>
                             </li>
                             <li className="flex gap-x-2 text-sm">
                                 <span className="bg-primary/20 p-1 h-fit rounded-full">
                                     <CheckDoubleIcon className="h-4 w-4 fill-primary"/>
                                 </span>
 
-                                <span className="font-medium"><span className="font-semibold">Scalability:</span>Scalability: Our solutions can grow with your business, ensuring long-term success.</span>
+                                <span className="font-medium"><span className="font-semibold">Scalability: </span>Our solutions can grow with your business, ensuring long-term success.</span>
                             </li>
                         </ul>
 

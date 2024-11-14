@@ -31,7 +31,7 @@ export function WhyChooseUniqbotz() {
                             <h3 className="text-xl font-semibold">{"Expertise and Experience"}</h3>
                             <ul className="text-sm space-y-2">
                                 <li>
-                                    <span className="font-semibold">Seasoned Professionals:</span>
+                                    <span className="font-semibold">Seasoned Professionals: </span>
                                     <span>Our team comprises highly skilled RPA experts with years of industry experience.</span>
                                 </li>
                                 <li>
