@@ -1,5 +1,4 @@
 'use client'
-
 import { useState, useEffect } from 'react';
 
 const ScrollToTop = () => {
@@ -32,13 +31,9 @@ const ScrollToTop = () => {
       {isVisible && (
         <div
           onClick={scrollToTop}
-          className="fixed bottom-32 right-0 cursor-pointer text-foreground transition flex flex-col gap-y-2"
+          className="fixed bottom-32 right-8 cursor-pointer flex justify-center items-center w-14 h-14 rounded-full bg-primary text-white shadow-lg hover:bg-primary/80 transition-all duration-300"
         >
-            <span className="-rotate-90 inline-flex gap-x-7 items-center">
-                <span className="rotate-90 text-3xl">↑</span>
-
-                Scroll to top
-            </span>
+          <span className="text-2xl font-bold">↑</span>
         </div>
       )}
     </>
@@ -46,3 +41,4 @@ const ScrollToTop = () => {
 };
 
 export default ScrollToTop;
+

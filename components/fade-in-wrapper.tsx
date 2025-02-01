@@ -40,7 +40,7 @@ const FadeSlideWrapper: React.FC<FadeSlideWrapperProps> = ({children, className 
     return (
         <div
             ref={elementRef}
-            className={`transition transform duration-1000 ${
+            className={`transition transform duration-1500 ${
                 isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-36'
             } ${className}`}
         >

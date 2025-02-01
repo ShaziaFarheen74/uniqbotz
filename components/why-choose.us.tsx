@@ -35,7 +35,7 @@ function WhyChooseUsCard({number, headerText, description}: {number: string; hea
     return (
         <FadeInWrapper className="relative px-8 py-6 bg-white transition-all flex max-md:flex-col max-md:text-center gap-x-8 rounded-md shadow">
             <span
-                className="w-fit p-3.5 flex justify-center items-center h-16 -3.5 leading-[64px] text-center border-2 border-dotted border-white text-4xl font-semibold span-animation bg-primary/20 mb-6">{number}</span>
+                className="w-fit p-3.5 flex justify-center items-center h-16 -3.5 leading-[64px] text-center border-2 border-dotted border-white text-4xl text-primary font-semibold span-animation bg-primary/20 mb-6">{number}</span>
             {/*<span className="rounded-full inline-block absolute left-8"></span>*/}
             <div className="space-y-2">
                 <h3 className="text-2xl font-semibold">{headerText}</h3>

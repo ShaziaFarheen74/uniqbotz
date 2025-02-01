@@ -1,77 +1,69 @@
-import Wrapper from "@/components/wrapper";
-import {CpuIcon} from "@/components/icons/cpu";
-import {SectionHeader} from "@/components/section-header";
+import Wrapper from "@/components/wrapper";  
+import { CpuIcon } from "@/components/icons/cpu";
+import { SectionHeader } from "@/components/section-header";
 import FadeSlideWrapper from "@/components/fade-in-wrapper";
 import Image from "next/image";
-import {Handshake, MessageCircleHeart, TreePalm, UsersIcon} from "lucide-react";
+import { Handshake, MessageCircleHeart, TreePalm, UsersIcon } from "lucide-react";
 
 export function Achievements() {
     return (
         <div id="achievements" className="py-20 space-y-16">
-            <SectionHeader text={"Achievements"}/>
+            <SectionHeader text={"Achievements"} />
             <Wrapper className="grid md:grid-cols-2 items-center justify-items-center gap-10">
                 <div className="space-y-8">
                     <FadeSlideWrapper>
-
-                        <h1 className="text-2xl md:text-3xl">Key Achievements:</h1>
+                        <h1 className="text-2xl md:text-3xl text-primary">Key Achievements:</h1>
                     </FadeSlideWrapper>
                     <div className="space-y-5">
                         <FadeSlideWrapper className="flex gap-6">
                             <span className="p-3 rounded-full rounded-tl-none bg-primary/10 h-fit">
-
-                            <UsersIcon className="text-primary"/>
+                                <UsersIcon className="text-primary" />
                             </span>
                             <div className="space-y-2">
-                                <h2 className="text-lg">Strong Founding Team:</h2>
-                                <p> Experienced professionals driving innovation.</p>
+                                <h2 className="text-xl md:text-2xl font-semibold">Strong Founding Team:</h2>
+                                <p className="text-lg md:text-xl">Experienced professionals driving innovation.</p>
                             </div>
                         </FadeSlideWrapper>
                         <FadeSlideWrapper className="flex gap-6">
                             <span className="p-3 rounded-full rounded-tl-none bg-primary/10 h-fit">
-
-                            <Handshake className="text-primary"/>
+                                <Handshake className="text-primary" />
                             </span>
                             <div className="space-y-2">
-                                <h2 className="text-lg">Strategic Partnerships: </h2>
-                                <p>Collaborating with industry leaders.</p>
+                                <h2 className="text-xl md:text-2xl font-semibold">Strategic Partnerships:</h2>
+                                <p className="text-lg md:text-xl">Collaborating with industry leaders.</p>
                             </div>
                         </FadeSlideWrapper>
                         <FadeSlideWrapper className="flex gap-6">
                             <span className="p-3 rounded-full rounded-tl-none bg-primary/10 h-fit">
-
-                            <CpuIcon className="fill-primary/80"/>
+                                <CpuIcon className="fill-primary/80" />
                             </span>
                             <div className="space-y-2">
-                                <h2 className="text-lg">Innovative Product Development: </h2>
-                                <p> Delivering cutting-edge RPA solutions.</p>
+                                <h2 className="text-xl md:text-2xl font-semibold">Innovative Product Development:</h2>
+                                <p className="text-lg md:text-xl">Delivering cutting-edge RPA solutions.</p>
                             </div>
                         </FadeSlideWrapper>
                         <FadeSlideWrapper className="flex gap-6">
                             <span className="p-3 rounded-full rounded-tl-none bg-primary/10 h-fit">
-
-                            <TreePalm className="text-primary"/>
+                                <TreePalm className="text-primary" />
                             </span>
                             <div className="space-y-2">
-                                <h2 className="text-lg">Rapid Growth:</h2>
-                                <p> Expanding our client base and market reach.</p>
+                                <h2 className="text-xl md:text-2xl font-semibold">Rapid Growth:</h2>
+                                <p className="text-lg md:text-xl">Expanding our client base and market reach.</p>
                             </div>
                         </FadeSlideWrapper>
                         <FadeSlideWrapper className="flex gap-6">
                             <span className="p-3 rounded-full rounded-tl-none bg-primary/10 h-fit">
-
-                            <MessageCircleHeart className="text-primary"/>
+                                <MessageCircleHeart className="text-primary" />
                             </span>
                             <div className="space-y-2">
-                                <h2 className="text-lg">Positive Customer Impact: </h2>
-                                <p>Empowering businesses with automation.</p>
+                                <h2 className="text-xl md:text-2xl font-semibold">Positive Customer Impact:</h2>
+                                <p className="text-lg md:text-xl">Empowering businesses with automation.</p>
                             </div>
                         </FadeSlideWrapper>
-
-
                     </div>
                 </div>
                 <FadeSlideWrapper>
-                    <Image src={"/website-images/images/9.png"} alt={"achievements"} width={300} height={306}/>
+                    <Image src={"/website-images/images/9.png"} alt={"achievements"} width={300} height={306} />
                 </FadeSlideWrapper>
                 {/*<div className="grid md:grid-cols-2 justify-center gap-8 text-center">*/}
                 {/*    <div className="h-5/6 grid gap-8 max-md:w-56 max-w-80">*/}
@@ -92,16 +84,8 @@ export function Achievements() {
                 {/*        </FadeSlideWrapper>*/}
                 {/*    </div>*/}
                 {/*</div>*/}
+
             </Wrapper>
         </div>
-    )
+    );
 }
-
-// function StatCard({endValue, description, suffix}: { endValue: number; description: string; suffix: string }) {
-//     return (<>
-//             <Counter target={endValue} suffix={suffix}
-//                      className="text-4xl md:text-5xl bg-gradient-to-r from-[#4E03A1] via-[#9B2EE0] via-75% to-[#9B2EE0] bg-clip-text text-transparent"/>
-//             <p className="text-foreground font-medium text-lg">{description}</p>
-//         </>
-//     )
-// }

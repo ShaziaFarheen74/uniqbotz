@@ -1,6 +1,6 @@
 import Wrapper from "@/components/wrapper";
-import FadeInWrapper from "@/components/fade-in-wrapper";
-import {SectionHeader} from "@/components/section-header";
+import FadeInWrapper from "@/components/fade-in-wrapper"; 
+import { SectionHeader } from "@/components/section-header";
 
 export function WhyChooseUniqbotz() {
     return (
@@ -9,27 +9,24 @@ export function WhyChooseUniqbotz() {
             <Wrapper className="space-y-10">
                 <div className="text-center space-y-4 max-w-3xl mx-auto">
                     <FadeInWrapper>
-
-                        <h2 className="text-2xl md:text-4xl">Experience the power of automation with UniqBotz</h2>
+                        <h2 className="text-3xl md:text-4xl font-semibold">Experience the power of automation with <span className="leading-0 font-semibold text-2xl md:text-3xl font-century">
+                        <span className="text-primary">U</span>niq<span className="text-secondary">B</span>otz</span></h2>
                     </FadeInWrapper>
                     <FadeInWrapper>
-
-                        <p>Our innovative RPA solutions are designed to streamline your operations, reduce costs, and enhance productivity. Partner
-                            with us to unlock your business potential and achieve digital transformation.</p>
+                        <p className="text-lg md:text-xl text-foreground/90">
+                            Our innovative RPA solutions are designed to streamline your operations, reduce costs, and enhance productivity. Partner
+                            with us to unlock your business potential and achieve digital transformation.
+                        </p>
                     </FadeInWrapper>
-
                 </div>
                 <div className="grid md:grid-cols-2 gap-14">
-                    <FadeInWrapper
-                        className="relative px-8 py-6 bg-white transition-all flex max-md:flex-col max-md:text-center gap-x-8 rounded-md shadow">
-                        <span
-                            className="w-fit p-3.5 flex justify-center items-center h-16 -3.5 leading-[64px] text-center border-2 border-dotted border-white text-4xl font-semibold span-animation bg-primary/20 mb-6">
+                    <FadeInWrapper className="relative px-8 py-6 bg-white transition-all flex max-md:flex-col max-md:text-center gap-x-8 rounded-md shadow">
+                        <span className="w-fit p-3.5 flex justify-center items-center h-16 -3.5 leading-[64px] text-center border-2 border-dotted border-white text-4xl font-semibold span-animation bg-primary/20 mb-6">
                             {"01"}
                         </span>
-                        {/*<span className="rounded-full inline-block absolute left-8"></span>*/}
                         <div className="space-y-4">
-                            <h3 className="text-xl font-semibold">{"Expertise and Experience"}</h3>
-                            <ul className="text-sm space-y-2">
+                            <h3 className="text-2xl font-semibold">Expertise and Experience</h3>
+                            <ul className="text-base space-y-2">
                                 <li>
                                     <span className="font-semibold">Seasoned Professionals: </span>
                                     <span>Our team comprises highly skilled RPA experts with years of industry experience.</span>
@@ -46,16 +43,13 @@ export function WhyChooseUniqbotz() {
                         </div>
                     </FadeInWrapper>
 
-                    <FadeInWrapper
-                        className="relative px-8 py-6 bg-white transition-all flex max-md:flex-col max-md:text-center gap-x-8 rounded-md shadow">
-                        <span
-                            className="w-fit p-3.5 flex justify-center items-center h-16 -3.5 leading-[64px] text-center border-2 border-dotted border-white text-4xl font-semibold span-animation bg-primary/20 mb-6">
+                    <FadeInWrapper className="relative px-8 py-6 bg-white transition-all flex max-md:flex-col max-md:text-center gap-x-8 rounded-md shadow">
+                        <span className="w-fit p-3.5 flex justify-center items-center h-16 -3.5 leading-[64px] text-center border-2 border-dotted border-white text-4xl font-semibold span-animation bg-primary/20 mb-6">
                             {"02"}
                         </span>
-                        {/*<span className="rounded-full inline-block absolute left-8"></span>*/}
                         <div className="space-y-4">
-                            <h3 className="text-xl font-semibold">Customized Solutions</h3>
-                            <ul className="text-sm space-y-2">
+                            <h3 className="text-2xl font-semibold">Customized Solutions</h3>
+                            <ul className="text-base space-y-2">
                                 <li>
                                     <span className="font-semibold">Tailored Approach: </span>
                                     <span>We tailor our solutions to meet your unique business needs and challenges.</span>
@@ -72,16 +66,13 @@ export function WhyChooseUniqbotz() {
                         </div>
                     </FadeInWrapper>
 
-                    <FadeInWrapper
-                        className="relative px-8 py-6 bg-white transition-all flex max-md:flex-col max-md:text-center gap-x-8 rounded-md shadow">
-                        <span
-                            className="w-fit p-3.5 flex justify-center items-center h-16 -3.5 leading-[64px] text-center border-2 border-dotted border-white text-4xl font-semibold span-animation bg-primary/20 mb-6">
+                    <FadeInWrapper className="relative px-8 py-6 bg-white transition-all flex max-md:flex-col max-md:text-center gap-x-8 rounded-md shadow">
+                        <span className="w-fit p-3.5 flex justify-center items-center h-16 -3.5 leading-[64px] text-center border-2 border-dotted border-white text-4xl font-semibold span-animation bg-primary/20 mb-6">
                             {"03"}
                         </span>
-                        {/*<span className="rounded-full inline-block absolute left-8"></span>*/}
                         <div className="space-y-4">
-                            <h3 className="text-xl font-semibold">Scalability and Future-Proofing</h3>
-                            <ul className="text-sm space-y-2">
+                            <h3 className="text-2xl font-semibold">Scalability and Future-Proofing</h3>
+                            <ul className="text-base space-y-2">
                                 <li>
                                     <span className="font-semibold">Scalable Solutions: </span>
                                     <span>Our solutions can grow with your business, adapting to changing needs.</span>
@@ -97,16 +88,14 @@ export function WhyChooseUniqbotz() {
                             </ul>
                         </div>
                     </FadeInWrapper>
-                    <FadeInWrapper
-                        className="relative px-8 py-6 bg-white transition-all flex max-md:flex-col max-md:text-center gap-x-8 rounded-md shadow">
-                        <span
-                            className="w-fit p-3.5 flex justify-center items-center h-16 -3.5 leading-[64px] text-center border-2 border-dotted border-white text-4xl font-semibold span-animation bg-primary/20 mb-6">
+
+                    <FadeInWrapper className="relative px-8 py-6 bg-white transition-all flex max-md:flex-col max-md:text-center gap-x-8 rounded-md shadow">
+                        <span className="w-fit p-3.5 flex justify-center items-center h-16 -3.5 leading-[64px] text-center border-2 border-dotted border-white text-4xl font-semibold span-animation bg-primary/20 mb-6">
                             {"04"}
                         </span>
-                        {/*<span className="rounded-full inline-block absolute left-8"></span>*/}
                         <div className="space-y-4">
-                            <h3 className="text-xl font-semibold">Data Security and Compliance</h3>
-                            <ul className="text-sm space-y-2">
+                            <h3 className="text-2xl font-semibold">Data Security and Compliance</h3>
+                            <ul className="text-base space-y-2">
                                 <li>
                                     <span className="font-semibold">Robust Security Measures: </span>
                                     <span>We prioritize data security and implement stringent measures to protect sensitive information.</span>
@@ -122,7 +111,6 @@ export function WhyChooseUniqbotz() {
                             </ul>
                         </div>
                     </FadeInWrapper>
-
                 </div>
             </Wrapper>
         </div>

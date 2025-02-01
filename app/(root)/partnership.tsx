@@ -1,4 +1,4 @@
-import Wrapper from "@/components/wrapper";
+/* import Wrapper from "@/components/wrapper";
 import Image from "next/image";
 import FadeInWrapper from "@/components/fade-in-wrapper";
 
@@ -29,4 +29,4 @@ export function Partnership() {
             <span className="absolute left-1/2 -translate-x-1/2 bottom-0 max-w-32 w-full inline-block h-1 bg-secondary"></span>
         </FadeInWrapper>
     )
-}
+} */

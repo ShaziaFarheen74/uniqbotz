@@ -2,12 +2,12 @@
 
 import Wrapper from "@/components/wrapper";
 import Link from "next/link";
-import {Button} from "@/components/ui/button";
-import {cn} from "@/lib/utils";
-import {MenuIcon} from "@/components/icons/menu";
-import {useToggle} from "@/hooks/use-toggle";
-import {ChevronDown} from "lucide-react";
-import {Logo} from "@/components/logo";
+import { Button } from "@/components/ui/button";
+import { cn } from "@/lib/utils";
+import { MenuIcon } from "@/components/icons/menu";
+import { useToggle } from "@/hooks/use-toggle";
+import { ChevronDown } from "lucide-react";
+import { Logo } from "@/components/logo";
 
 interface Route {
     label: string;
@@ -15,7 +15,7 @@ interface Route {
     subRoutes?: {
         label: string;
         path?: string;
-    }[]
+    }[];
 }
 
 export const Routes: Route[] = [
@@ -47,14 +47,14 @@ export const Routes: Route[] = [
                 label: "Use Cases",
                 path: "/services"
             },
+         //   {
+        //        label: "Blog",
+        //        path: "/blog"
+        //    },
+            
 
         ]
-
     },
-    // {
-    //     label: "Blog",
-    //     path: "/blog",
-    // },
     {
         label: "About",
         path: "/about",
@@ -96,8 +96,8 @@ export const Routes: Route[] = [
 ]
 
 export function Navbar() {
-    const {handleToggle} = useToggle()
-    // const [scrolled, setScrolled] = useState(false);
+    const { handleToggle } = useToggle();
+     // const [scrolled, setScrolled] = useState(false);
     //
     // useEffect(() => {
     //     const handleScroll = () => {
@@ -111,57 +111,70 @@ export function Navbar() {
     //     return () => window.removeEventListener('scroll', handleScroll);
     // }, []);
 
+
     return (
         <header className={cn("fixed inset-x-0 w-full top-0 z-30 border-b border-b-muted/10 transition-all duration-500 bg-white text-foreground")}>
             <Wrapper className="h-16 md:h-20 flex items-center justify-between">
-                <Logo/>
+                <Logo />
                 <ul className="hidden md:flex items-center space-x-4 lg:space-x-5">
                     {
                         Routes.map((route: Route, idx) => (
                             <li key={idx} className="relative group p-2">
                                 {
                                     route.subRoutes ? (
-                                            <>
-                                                <Link href={route.path ? route.path : "#"} className="inline-flex items-center gap-x-2">
-                                                    <span>{route.label}</span>
-                                                    <ChevronDown className="group-hover:-rotate-180 transition h-4 w-4"/>
-                                                </Link>
-                                                <ul className="group-hover:flex hidden bg-white p-3 rounded-md absolute text-foreground top-10 left-1/2 -translate-x-1/2 w-56 shadow-all whitespace-nowrap flex-col">
-                                                    {
-                                                        route.subRoutes.map((subRoute, idx) => (
-                                                            <li key={idx} className="hover:bg-muted rounded-lg cursor-pointer">
-                                                                {
-                                                                    subRoute.path ? (<Link className="inline-block text-sm text-foreground/90 py-1 px-2 w-full" href={subRoute.path}>{subRoute.label}</Link>) : (
-                                                                        <p>{subRoute.label}</p>
-                                                                    )
-                                                                }
-
-                                                            </li>
-                                                        ))
-                                                    }
-                                                </ul>
-                                            </>
-                                        ) :
-                                        route.path && (
-                                            <>
+                                        <>
+                                            <Link 
+                                                href={route.path ? route.path : "#"} 
+                                                className="inline-flex items-center gap-x-2 text-lg font-semibold text-primary hover:text-primary-lg transition duration-300"
+                                            >
+                                                <span>{route.label}</span>
+                                                <ChevronDown className="group-hover:-rotate-180 transition h-4 w-4" />
+                                            </Link>
+                                            <ul className="group-hover:flex hidden bg-white p-3 rounded-md absolute text-foreground top-10 left-1/2 -translate-x-1/2 w-56 shadow-all whitespace-nowrap flex-col">
                                                 {
-                                                    route.path === "/contact" ? (
-                                                        <Button className="" variant="secondary" asChild>
-                                                            <Link href={route.path}>{route.label}</Link>
-                                                        </Button>
-                                                    ) : (
-                                                        <Link href={route.path}>{route.label}</Link>
-                                                    )
+                                                    route.subRoutes.map((subRoute, idx) => (
+                                                        <li key={idx} className="hover:bg-muted rounded-lg cursor-pointer">
+                                                            {
+                                                                subRoute.path ? (
+                                                                    <Link 
+                                                                        className="inline-block text-base font-semibold text-primary py-1 px-2 w-full" 
+                                                                        href={subRoute.path}
+                                                                    >
+                                                                        {subRoute.label}
+                                                                    </Link>
+                                                                ) : (
+                                                                    <p>{subRoute.label}</p>
+                                                                )
+                                                            }
+                                                        </li>
+                                                    ))
                                                 }
-                                            </>
-                                        )
+                                            </ul>
+                                        </>
+                                    ) : route.path && (
+                                        <>
+                                            {
+                                                route.path === "/contact" ? (
+                                                    <Button className="text-lg font-semibold py-3 px-6 transition duration-300 ease-in-out transform hover:scale-105" variant="secondary" asChild>
+                                                        <Link href={route.path} className="text-primary">{route.label}</Link>
+                                                    </Button>
+                                                ) : (
+                                                    <Link 
+                                                        href={route.path} 
+                                                        className="text-lg font-semibold text-primary hover:text-primary-dark transition duration-300"
+                                                    >
+                                                        {route.label}
+                                                    </Link>
+                                                )
+                                            }
+                                        </>
+                                    )
                                 }
-
                             </li>
                         ))
                     }
                 </ul>
-                <MenuIcon className="md:hidden h-8 fill-foreground w-8 cursor-pointer" onClick={handleToggle}/>
+                <MenuIcon className="md:hidden h-8 fill-foreground w-8 cursor-pointer" onClick={handleToggle} />
             </Wrapper>
         </header>
     )

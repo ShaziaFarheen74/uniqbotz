@@ -1,4 +1,4 @@
-import Wrapper from "@/components/wrapper";
+import Wrapper from "@/components/wrapper"; 
 import Image from "next/image";
 import FadeSlideWrapper from "@/components/fade-in-wrapper";
 
@@ -6,9 +6,13 @@ export function Services() {
     return (
         <div className="pb-40">
             <Wrapper className="space-y-12">
-                <FadeSlideWrapper className="text-center max-w-screen-md mx-auto space-y-4">
-                    <h2 className="text-3xl md:text-4xl font-semibold">We deliver a comprehensive suite of RPA solutions, ensuring seamless automation and complete client satisfaction.</h2>
-                    <p>Add on BOTs, Increased Quality BOTs, BOT execution tracker, Quick deployment – Smooth operations, Zero frustrations</p>
+                <FadeSlideWrapper className="text-center max-w-screen-md mx-auto space-y-6">
+                    <h2 className="text-3xl md:text-4xl font-semibold">
+                        We deliver a comprehensive suite of RPA solutions, ensuring seamless automation and complete client satisfaction.
+                    </h2>
+                    <p className="text-lg md:text-xl text-foreground/80 max-w-xl mx-auto">
+                        Add on BOTs, Increased Quality BOTs, BOT execution tracker, Quick deployment – Smooth operations, Zero frustrations
+                    </p>
                 </FadeSlideWrapper>
                 <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-12 justify-items-center">
                     <ServiceCard imageSrc={`/s1.png`} headerText={"RPA"} description={"Robotic Process Automation (RPA) automates repetitive tasks, allowing software bots to handle routine workflows. This boosts efficiency, reduces errors, and frees up employees for more complex work."}/>
@@ -32,9 +36,9 @@ function ServiceCard({headerText, description, imageSrc}: { headerText: string; 
             <div>
                 <Image src={imageSrc} alt={headerText} width={202} height={196}/>
             </div>
-            <div className="space-y-2">
-                <h2 className="text-xl font-semibold capitalize">{headerText}</h2>
-                <p className="text-foreground/80">{description}</p>
+            <div className="space-y-3">
+                <h2 className="text-xl md:text-2xl font-semibold capitalize">{headerText}</h2>
+                <p className="text-base md:text-lg text-foreground/80">{description}</p>
             </div>
         </FadeSlideWrapper>
     )
