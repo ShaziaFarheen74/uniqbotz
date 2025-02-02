@@ -23,7 +23,7 @@ export function Hero() {
                         mainText={"UniqBotz Infotech Make You "} 
                         words={words} 
                         className="text-4xl font-semibold text-white"
-                        wordClassName="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent pr-2"
+                        wordClassName="bg-gradient-to-r from-purple-500 to-purple-700 bg-clip-text pr-2 shining-text"
                     />
                     <p className="md:text-xl text-white/90 font-medium md:leading-9 max-w-lg">
                         Transform your business operations with custom RPA solutions that streamline processes, boost productivity, and unlock new efficiencies for sustainable growth.

@@ -116,7 +116,7 @@ export function CareerForm() {
     return (
         <FadeSlideWrapper className="py-20">
             <Wrapper className="max-w-lg mx-auto">
-                <h1 className="mb-9 text-3xl">Join Us</h1>
+                <h1 className="mb-9 text-3xl text-secondary">Join Us</h1>
                 <Form {...form}>
                     <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8">
                         <FormField

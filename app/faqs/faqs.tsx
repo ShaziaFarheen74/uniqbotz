@@ -8,12 +8,11 @@ export function Faqs() {
         <div className="py-20">
             <Wrapper className="space-y-10">
                 <div className="max-w-3xl mx-auto text-center">
+                   
                     <FadeSlideWrapper>
-                        <h1 className="text-2xl md:text-4xl mb-4 font-semibold">Frequently Asked Questions</h1>
-                    </FadeSlideWrapper>
-                    <FadeSlideWrapper>
-                        <p className="text-lg md:text-xl text-foreground/80">
-                            <span className="font-semibold">Have questions about how Robotic Process Automation (RPA) can transform your business?</span>
+                        <p className="text-lg md:text-xl text-foreground/100">
+                            <span className="font-bold md:text-3xl text-secondary">Have questions about how Robotic Process Automation (RPA) can transform your business?</span>
+                            <br />
                             <br />
                             Explore our frequently asked questions below to learn more about our RPA solutions, services, and how we can support your automation journey.
                         </p>

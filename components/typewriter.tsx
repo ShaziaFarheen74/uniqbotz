@@ -39,7 +39,7 @@ export default function Typewriter({mainText, words, className, wordClassName}: 
     <h1 className={cn("min-h", className)}>
       <span>{mainText}</span>
       <br className=""/>
-      <span className={cn("inline-block min-h-20", wordClassName)}>{currentWord}</span>
+      <span className={cn("inline-block text-primary min-h-20", wordClassName)}>{currentWord}</span>
     </h1>
   );
 }

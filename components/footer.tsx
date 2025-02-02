@@ -1,4 +1,6 @@
-import { FacebookIcon } from "@/components/icons/facebook-fill"; 
+"use client";
+//import { useState, useEffect } from "react";
+import { FacebookIcon } from "@/components/icons/facebook-fill";  
 import { InstagramIcon } from "@/components/icons/instagram-fill";
 import { LinkedInIcon } from "@/components/icons/linked-in-fill";
 import { Logo } from "@/components/logo";
@@ -6,9 +8,32 @@ import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
 import Wrapper from "@/components/wrapper";
 import Link from "next/link";
+//import { translateText } from "@/lib/translate";
 
 export function Footer() {
     const currentYear = new Date().getFullYear();
+  //  const [language, setLanguage] = useState("en");
+   // const [toggleText, setToggleText] = useState("Switch to French");
+
+   // useEffect(() => {
+     //   const storedLang = localStorage.getItem("lang") || "en";
+       // setLanguage(storedLang);
+        
+        //if (storedLang === "fr") {
+      //      translateText("Switch to English", "fr").then(setToggleText);
+      //  } else {
+      //      setToggleText("Switch to French");
+       // }
+  //  }, []);
+
+    //const toggleLanguage = () => {
+ //       const newLang = language === "en" ? "fr" : "en";
+   //     setLanguage(newLang);
+     //   localStorage.setItem("lang", newLang);
+
+      //  translateText(newLang === "fr" ? "Switch to English" : "Switch to French", newLang)
+        //    .then(setToggleText);
+  //  };
 
     return (
         <footer className="bg-muted py-20 h-fit">
@@ -68,6 +93,8 @@ export function Footer() {
                     </Button>
                 </div>
 
+               
+
                 {/* Copyright Section */}
                 <div className="text-center text-muted-foreground mt-10">
                     <p className="text-sm font-light">&copy; {currentYear} UniqBotz. All Rights Reserved.</p>
@@ -76,4 +103,3 @@ export function Footer() {
         </footer>
     )
 }
-

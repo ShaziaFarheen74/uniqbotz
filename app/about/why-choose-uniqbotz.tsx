@@ -4,7 +4,7 @@ import { SectionHeader } from "@/components/section-header";
 
 export function WhyChooseUniqbotz() {
     return (
-        <div id="why-choose-us" className="py-20 space-y-14">
+        <div id="why-choose-us" className="py-5 space-y-14">
             <SectionHeader text={"Why Choose UniqBotz?"}/>
             <Wrapper className="space-y-10">
                 <div className="text-center space-y-4 max-w-3xl mx-auto">
@@ -21,7 +21,7 @@ export function WhyChooseUniqbotz() {
                 </div>
                 <div className="grid md:grid-cols-2 gap-14">
                     <FadeInWrapper className="relative px-8 py-6 bg-white transition-all flex max-md:flex-col max-md:text-center gap-x-8 rounded-md shadow">
-                        <span className="w-fit p-3.5 flex justify-center items-center h-16 -3.5 leading-[64px] text-center border-2 border-dotted border-white text-4xl font-semibold span-animation bg-primary/20 mb-6">
+                        <span className="w-fit p-3.5 flex justify-center items-center h-16 -3.5 leading-[64px] text-center border-2 border-dotted border-white text-4xl font-semibold text-primary span-animation bg-primary/20 mb-6">
                             {"01"}
                         </span>
                         <div className="space-y-4">
@@ -44,7 +44,7 @@ export function WhyChooseUniqbotz() {
                     </FadeInWrapper>
 
                     <FadeInWrapper className="relative px-8 py-6 bg-white transition-all flex max-md:flex-col max-md:text-center gap-x-8 rounded-md shadow">
-                        <span className="w-fit p-3.5 flex justify-center items-center h-16 -3.5 leading-[64px] text-center border-2 border-dotted border-white text-4xl font-semibold span-animation bg-primary/20 mb-6">
+                        <span className="w-fit p-3.5 flex justify-center items-center h-16 -3.5 leading-[64px] text-center border-2 border-dotted border-white text-4xl font-semibold text-primary span-animation bg-primary/20 mb-6">
                             {"02"}
                         </span>
                         <div className="space-y-4">
@@ -67,7 +67,7 @@ export function WhyChooseUniqbotz() {
                     </FadeInWrapper>
 
                     <FadeInWrapper className="relative px-8 py-6 bg-white transition-all flex max-md:flex-col max-md:text-center gap-x-8 rounded-md shadow">
-                        <span className="w-fit p-3.5 flex justify-center items-center h-16 -3.5 leading-[64px] text-center border-2 border-dotted border-white text-4xl font-semibold span-animation bg-primary/20 mb-6">
+                        <span className="w-fit p-3.5 flex justify-center items-center h-16 -3.5 leading-[64px] text-center border-2 border-dotted border-white text-4xl font-semibold text-primary span-animation bg-primary/20 mb-6">
                             {"03"}
                         </span>
                         <div className="space-y-4">
@@ -90,7 +90,7 @@ export function WhyChooseUniqbotz() {
                     </FadeInWrapper>
 
                     <FadeInWrapper className="relative px-8 py-6 bg-white transition-all flex max-md:flex-col max-md:text-center gap-x-8 rounded-md shadow">
-                        <span className="w-fit p-3.5 flex justify-center items-center h-16 -3.5 leading-[64px] text-center border-2 border-dotted border-white text-4xl font-semibold span-animation bg-primary/20 mb-6">
+                        <span className="w-fit p-3.5 flex justify-center items-center h-16 -3.5 leading-[64px] text-center border-2 border-dotted border-white text-4xl font-semibold text-primary span-animation bg-primary/20 mb-6">
                             {"04"}
                         </span>
                         <div className="space-y-4">

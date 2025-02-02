@@ -27,7 +27,7 @@ export function Team() {
                     </div>
                     <div className="space-y-6">
                         <div>
-                            <h2 className="text-2xl font-semibold text-primary">SUGUMAR B</h2>
+                            <h2 className="text-2xl font-semibold text-primary">Sugumar B</h2>
                             <p className="text-lg text-foreground/70">Chief People Officer | CPO</p>
                             <p className="text-md text-foreground/50">UniqBotz Infotech, India</p>
                         </div>
@@ -54,7 +54,7 @@ export function Team() {
                     </div>
                     <div className="space-y-6">
                         <div>
-                            <h2 className="text-2xl font-semibold text-primary">VINOD SRINIVASAN K</h2>
+                            <h2 className="text-2xl font-semibold text-primary">Vinod Srinivasan K</h2>
                             <p className="text-lg text-foreground/70">Business Development Partner | BDP</p>
                             <p className="text-md text-foreground/50">UniqBotz Infotech, Canada</p>
                         </div>
