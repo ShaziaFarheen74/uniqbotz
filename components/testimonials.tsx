@@ -1,32 +1,23 @@
-'use client'
 
-import Autoplay from "embla-carousel-autoplay"
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+'use client';
+
+import Autoplay from "embla-carousel-autoplay";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 import Wrapper from "@/components/wrapper";
 import { SectionHeader } from "@/components/section-header";
 import FadeSlideWrapper from "@/components/fade-in-wrapper";
+import Image from 'next/image';
 
 export const TestimonialsData = [
     {
-        name: "John Smith",
-        title: "Associate, Solar Planet",
-        quote: `Uniqbotz has played a pivotal role in my professional growth. With their support, I participated in various advanced training programs, which equipped me with essential skills and knowledge. These learning experiences have been instrumental in advancing my career and achieving professional milestones. Uniqbotz stands out for its dedication to making innovative learning accessible, empowering individuals to pursue their career ambitions without financial constraints.`,
+        name: "RESSCO",
+        quote: "UniqBotz Infotech exceeded our expectations in developing the internal web application for Ressco Canada’s banquet hall booking system. The solution they created is incredibly detailed, tracking availability, managing resources, and accommodating multiple roles within a cloud-based platform. It truly feels like they captured the owner's vision, ensuring every aspect of the business is covered. The attention to detail and seamless functionality make it an invaluable tool for us. I highly recommend UniqBotz Infotech for any web application development!",
+        image: "/website-images/images/RESSCO-Mano.jpg",
     },
     {
-        name: "Priya Patit",
-        title: "Network Engineer",
-        quote: `Uniqbotz has played a pivotal role in my professional growth. With their support, I participated in various advanced training programs, which equipped me with essential skills and knowledge. These learning experiences have been instrumental in advancing my career and achieving professional milestones. Uniqbotz stands out for its dedication to making innovative learning accessible, empowering individuals to pursue their career ambitions without financial constraints.`,
-    },
-    {
-        name: "Francis Brown",
-        title: "Data Engineer",
-        quote: `Uniqbotz has played a pivotal role in my professional growth. With their support, I participated in various advanced training programs, which equipped me with essential skills and knowledge. These learning experiences have been instrumental in advancing my career and achieving professional milestones. Uniqbotz stands out for its dedication to making innovative learning accessible, empowering individuals to pursue their career ambitions without financial constraints.`,
-    },
-    {
-        name: "Janet Snow",
-        title: "Web Developer",
-        quote: `Uniqbotz has played a pivotal role in my professional growth. With their support, I participated in various advanced training programs, which equipped me with essential skills and knowledge. These learning experiences have been instrumental in advancing my career and achieving professional milestones. Uniqbotz stands out for its dedication to making innovative learning accessible, empowering individuals to pursue their career ambitions without financial constraints.`,
+        name: "Das Manpower Consultancy Services",
+        quote: "Working with UniqBotz Infotech has been a game-changer for us at 'Das Manpower Consultancy Services'. Their automation solution for resume collection and profile selection has streamlined our recruitment process like never before. The entire system runs seamlessly, saving us time and effort while ensuring the right candidates are selected. We are extremely impressed with their expertise and commitment to delivering exceptional results!",
+        image: "/website-images/images/Das-Deepankar Das.png",
     },
 ];
 
@@ -52,28 +43,29 @@ export function Testimonials() {
 
                 {/* Carousel Section */}
                 <FadeSlideWrapper>
-                    <Carousel className="w-full max-w-2xl mx-auto" opts={{ loop: true }} plugins={[
-                        Autoplay({ delay: 3000 }),
-                    ]}>
+                    <Carousel className="w-full max-w-2xl mx-auto" opts={{ loop: true }} plugins={[Autoplay({ delay: 3000 })]}>
                         <CarouselContent>
                             {TestimonialsData.map((item, index) => (
                                 <CarouselItem key={index}>
                                     <div className="p-6 text-center bg-white border rounded-md shadow-lg">
                                         <div className="space-y-6 flex flex-col justify-center items-center">
-                                            {/* Avatar */}
-                                            <Avatar className="h-16 w-16">
-                                                <AvatarImage src="https://github.com/shadcn.png" alt="@shadcn" />
-                                                <AvatarFallback>LT</AvatarFallback>
-                                            </Avatar>
+                                            {/* Testimonial Image */}
+                                            <Image 
+                                                className="w-48 h-32 object-contain rounded-md"  // Ensures the image fits fully inside
+                                                src={item.image}
+                                                alt={item.name}
+                                                width={192}  // Increased width for better clarity
+                                                height={128}  // Increased height for better clarity
+                                            />
+                                             {/* Client Info */}
+                                             <div className="text-center">
+                                                <h3 className="font-semibold  text-3xl text-secondary">{item.name}</h3>
+                                            </div>
                                             {/* Testimonial Quote */}
-                                            <p className="text-lg md:text-xl text-foreground/80">
+                                            <p className="text-lg md:text-xl text-primary">
                                                 {item.quote}
                                             </p>
-                                            {/* Client Info */}
-                                            <div className="text-center">
-                                                <h3 className="font-semibold text-xl text-primary">{item.name}</h3>
-                                                <p className="text-sm font-medium text-foreground/70">{item.title}</p>
-                                            </div>
+                                            
                                         </div>
                                     </div>
                                 </CarouselItem>

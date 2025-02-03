@@ -36,12 +36,12 @@ function ServiceCard({headerText, description, imageSrc}: { headerText: string; 
     return (
         <FadeSlideWrapper className="text-center flex flex-col items-center px-8 py-10 gap-y-5 rounded-lg shadow-all max-w-[22rem]">
             <div>
-                <Image src={imageSrc} alt={headerText} width={202} height={196}/>
+                <Image src={imageSrc} alt={headerText} width={202} height={196} layout="responsive"/>
             </div>
             <div className="space-y-3">
                 <h2 className="text-xl md:text-2xl font-semibold text-primary capitalize">{headerText}</h2>
                 <p className="text-base md:text-lg text-foreground/80">{description}</p>
             </div>
         </FadeSlideWrapper>
-    )
+    ) 
 }

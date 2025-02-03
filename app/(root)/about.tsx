@@ -13,9 +13,9 @@ export function About() {
         setReadMore(!readMore)
     }
     return (<div className="pb-32"> 
-        <Wrapper className="flex flex-wrap max-md:flex-col items-center justify-center gap-8 relative">
+        <Wrapper className="flex flex-wrap max-md:flex-col items-center justify-center gap-8 relative lay">
             <FadeInWrapper className="flex-1">
-                <Image src={"/high.jpg"} alt={"about"} width={754} height={549} className="max-h-full"/>
+                <Image src={"/high.jpg"} alt={"about"} width={754} height={549} className="max-h-full" layout="responsive" priority/>
             </FadeInWrapper>
             <div className="space-y-6 flex-1">
                 <FadeInWrapper>

@@ -47,9 +47,9 @@ export function Team() {
                 </FadeSlideWrapper>
 
                 {/* Team Member 2 */}
-                <FadeSlideWrapper className="flex flex-col gap-y-7 p-10 text-center shadow-all rounded-lg hover:shadow-xl transition-shadow">
+                <FadeSlideWrapper className="flex flex-col gap-y-7 p-10 text-center  rounded-lg hover:shadow-xl transition-shadow">
                     <div className="relative flex justify-center items-center h-fit p-4">
-                        <Image src="/website-images/images/team2.png" alt={"Vinod Srinivasan"} width={140} height={140} className="rounded-full"/>
+                        <Image src="/website-images/images/team2.png" alt={"Vinod Srinivasan"} width={140} height={140} className="rounded-full shadow-none" />
                         <Image src="/team-shape.png" alt={"team shape"} width={208} height={198} className="absolute h-full w-fit animate-spin-slow"/>
                     </div>
                     <div className="space-y-6">

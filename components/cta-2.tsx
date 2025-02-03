@@ -7,7 +7,6 @@ import FadeSlideWrapper from "@/components/fade-in-wrapper";
 export function Cta2({headerText, link, linkLabel}: { headerText: string, link: string; linkLabel: string }) {
     return (
         <div className="py-14">
-            <FadeSlideWrapper>
                 <Wrapper
                     className="flex max-md:flex-col max-md:text-center gap-8 items-center justify-between py-16 px-10 md:px-14 bg-primary/80 md:rounded-lg">
                     <FadeSlideWrapper className="space-y-4">
@@ -20,10 +19,10 @@ export function Cta2({headerText, link, linkLabel}: { headerText: string, link: 
                         </Button>
                     </FadeSlideWrapper>
                     <FadeSlideWrapper className="flex items-center justify-center">
-                        <Image src={"/website-images/images/9.png"} alt={"robot 9"} width={200} height={150}/>
+                        <Image src={"/website-images/images/9.png"} alt={"robot 9"} width={200} height={150} layout="responsive"/>
                     </FadeSlideWrapper>
                 </Wrapper>
-            </FadeSlideWrapper>
+    
         </div>
     )
 }
